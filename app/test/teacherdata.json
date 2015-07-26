@@ -1,0 +1,27 @@
+[{
+  "tecname": "吴老师",
+  "classes": [{
+    "name": "软件工程5班",
+    "_lowername": "软件工程5班",
+    "email": "",
+    "image": "images/admin/iconfont-member.png"
+  }, {
+    "name": "软件工程6班",
+    "_lowername": "软件工程6班",
+    "email": "",
+    "image": "images/admin/iconfont-member.png"
+  }]
+}, {
+  "tecname": "刘老师",
+  "classes": [{
+    "name": "数字与媒体6班",
+    "_lowername": "数字与媒体6班",
+    "email": "",
+    "image": "images/admin/iconfont-member.png"
+  }, {
+    "name": "数字与媒体5班",
+    "_lowername": "数字与媒体5班",
+    "email": "",
+    "image": "images/admin/iconfont-member.png"
+  }]
+}]

@@ -1,0 +1,176 @@
+@fontFamily:"Microsoft YaHei", "SimHei", "Arial Unicode MS";
+//至上而下lighter
+@blue-color-1:#1a237e;
+@blue-color-2:#283593;
+@blue-color-3:#303f9f;
+@blue-color-4:#3949ab;
+@blue-color-5:#3f51b5;
+@blue-color-6:#3c6bc0;
+@blue-color-7:#7986cb;
+@blue-color-8:#9fa8da;
+@blue-color-9:#c5cae9;
+@blue-color-10:#e8eaf6;
+@green-color-1:#3FB57F;
+@green-color-2:rgba(48, 166, 112, 1);
+@green-color-3:#43D090;
+md-input-container.md-greenTheme-theme > md-icon{
+    color:rgba(165, 165, 165, 1);
+}
+	   //登录页面
+		.login-container{
+			overflow: hidden;
+			.stuindex-title{
+			width: 100%;
+			height: 20px;
+			font-size: 20px;
+			border-left: 3px solid @green-color-2;
+			margin: 20px;
+            line-height: 20px;
+            color:@green-color-2;
+            text-align: left;
+            text-indent: 20px;
+			}
+			.stuindex-listbox{
+				ul{
+					li{
+						display: block;
+						position: relative;
+						padding:10px;
+						margin: 0 0 8px 40px;
+                        padding-bottom: 0;
+						width: 280px;
+						height: 270px;
+						transition:box-shadow .3s ease;
+						float: left;
+						cursor:pointer;
+						.stuindex-list-time{
+							width: 70px;
+							padding:2px;
+							text-align: center;
+							background-color: rgba(0,0,0,.4);
+							color:#fff;
+							font-size: 12px;
+							position: absolute;
+							top: 20px;
+							right:10px;
+							z-index: 10;
+							opacity: 0;
+							transition:all .6s ease;
+						}
+						.stuindex-listbox-img{
+							width: 260px;
+                        	height: 135px;
+                        	margin:0 auto;
+                        	overflow: hidden;
+                        	img{
+                        	width: 260px;
+                        	height: auto;
+                        	display: block;
+                        	transition:all .6s ease;
+                           }
+						}
+                       h4{
+                       	width: 100%;
+                       	height: 14px;
+                        line-height: 16px;
+                        font-size: 15px;
+                        font-weight: bold;
+                        text-align: left;
+                        margin:10px 0 10px 0;
+                        text-indent: 10px;
+                        color:#333;
+                       }
+                       p{
+                       	  width: 260px;
+						  line-height: 30px;
+						  font-size: 14px;
+						  color: #b4bbbf;
+						  padding: 0 10px 0px 10px;
+                        em{
+			        	padding:3px;
+			        	display: inline-block;
+			        	color:#FFF;
+			        	line-height: 14px;
+			        	margin-right: 10px;
+			            }
+			            .stuindex-active{
+			        	background-color: @green-color-1;
+			            }
+			            .stuindex-disabled{
+			        	background-color: #888180;
+			            }
+			            .stuindex-abled{
+			        	background-color: #DFCB40;;
+			            }
+                       }
+                       span{
+                       	width: 100%;
+                       	line-height: 20px;
+                       	display: block;
+                       	margin: 5px 0 0;
+                       	font-size: 14px;
+                       	text-indent: 10px;
+                       	color:@green-color-1;
+                       }
+                       &:hover{
+                       	box-shadow: 0 2px 8px #bbb;
+                       	.stuindex-listbox-img img{
+                       	   transform:scale(1.1);
+                       	}
+                       	.stuindex-list-time{
+                       		right: 27px;
+                       		opacity: 1;
+                       	}
+                       }
+                      }
+					}
+				}
+			}
+					.login-board{
+			width: 100%;
+			height: 350px;
+			margin-top: 100px;
+			.login-board-right{
+				   width: 100%;
+				   height: 100%;
+				   float: left;
+				   .stu-login-box{
+				   	width: 600px;
+				   	margin: 30px auto;
+				   	padding:10px 0;
+				   	height: 250px;
+				   	md-input-container.md-default-theme .md-input{
+				   	color:@green-color-1;
+				   	}
+				   	h3{
+                   	display: block;
+                   	width: 100%;
+                   	height: 60px;
+                   	line-height: 60px;
+                   	text-align: center;
+                   	font-size: 20px;
+                   	color:rgb(76,175,80);
+                   	font-weight: bold;
+                   	margin: 0 auto;
+                   	position: relative;
+                   	color: #333;
+                   	background:url(../images/common/iconfont-kuaijiedenglu.png) rgba(255,255,255,.6) center center no-repeat;              	
+                   }
+				   	md-input-container {
+				   		  padding: 6px;
+         				  margin-bottom: 22px;
+				   	}
+				   	.stu-login-box-input{
+				   		background-color: transparent;
+				   		width: 280px;
+				   		margin:10px auto;
+				   	}
+				   	.stu-login-box-btn{
+				   		  width: 200px;
+						  border-radius: 5pc;
+						  left: 38px;
+				   	}
+			}
+		}
+		
+	}

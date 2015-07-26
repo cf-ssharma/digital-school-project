@@ -1,0 +1,146 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}input,textarea{outline: none;}a:link{text-decoration: none;}a:active,a:visited{text-decoration: none;color: #333};
+@fontFamily:"Microsoft YaHei", "SimHei", "Arial Unicode MS";
+//至上而下lighter
+@blue-color-1:#1a237e;
+@blue-color-2:#283593;
+@blue-color-3:#303f9f;
+@blue-color-4:#3949ab;
+@blue-color-5:#3f51b5;
+@blue-color-6:#3c6bc0;
+@blue-color-7:#7986cb;
+@blue-color-8:#9fa8da;
+@blue-color-9:#c5cae9;
+@blue-color-10:#e8eaf6;
+@green-color-1:#3FB57F;
+@green-color-2:rgba(48, 166, 112, 1);
+@green-color-3:#43D090;
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}
+.iconfont{
+	font-family:"iconfont";
+    font-size:16px;
+    font-style:normal;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:@fontFamily;
+	background-color: #FFF;
+}
+//表格单奇数行颜色
+.grid_even{
+	background: #FFF;
+}
+.grid_odd{
+	background: @blue-color-10;
+}
+.md-button.md-default-theme.md-hue-1.md-primary{
+	color: #FFF;
+	height: 36px;
+}
+.md-select-label{
+	color:#767474;
+}
+.container-warp{
+		width: 1024px;
+		margin:0 auto;
+		overflow: hidden;		
+}
+md-input-container.md-default-theme > md-icon {
+	color: #B8B7B7;	
+}
+/**统一的头部样式**/
+.stu-header{
+	.header-menu{
+		background-color: @green-color-1;
+		//菜单按钮激活颜色
+		.menu-btn-active button{
+			background:@green-color-2;
+			border-radius: 0;
+		}
+		 .md-button.md-default-theme.md-hue-1:not([disabled]):focus{
+		    background: @green-color-2;
+		 }
+		 .md-button.md-default-theme.md-hue-1:not([disabled]):hover{
+			background-color:@green-color-2;
+			border-radius:none;
+		}
+	}
+	.header-toolbar{
+		.header-logo{
+		     background: url(../images/student/student-header-logo.png) center center no-repeat;
+		     background-size: auto 48px;
+		}
+		.login-btn{
+			color:@green-color-2;
+		}
+	}
+}
+.adm-header{
+	.header-menu{
+		background-color:@blue-color-5; 
+		//菜单按钮激活颜色
+		.menu-btn-active button{
+			background: @blue-color-2;
+			border-radius: 0;
+		}
+		 .md-button.md-default-theme.md-hue-1:not([disabled]):focus{
+		    background: @blue-color-2;
+		 }
+		 .md-button.md-default-theme.md-hue-1:not([disabled]):hover{
+			background-color: @blue-color-2;
+			border-radius:none;
+		}
+	}
+	.header-toolbar{
+		.header-logo{
+		     background: url(../images/admin/admin-header-logo.png) center center no-repeat;
+		     background-size: auto 48px;
+		}
+		.login-btn{
+			color:@blue-color-8;
+		}
+	}
+}
+.header-toolbar{
+	    	height: 80px;
+	    	background-color: #FFF;
+	    	width: 100%;
+	    	.header-logo{
+	    		display: block;
+	    		margin:(80-48)/2px 0;
+	    		height: 48px;
+	    		width: 330px;
+	    		float: left;
+	    	}
+            .login-btn{
+                background: 0 0;
+				font-size: 16px;
+				line-height: 80px;
+				display: block;
+				text-align: center;
+				height: 80px;
+				float: right;
+            }
+	    }
+.header-menu{
+	height: 36px;
+	width: 100%;
+	min-width: 1024px;
+	.md-button{
+		padding:0;
+		margin:0;
+	 }
+	 .header-menu-section{
+		margin-left: 10px;
+		float: left;
+	}
+}
+/**统一的尾部**/
+.footer{
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	margin: 20px auto;
+	color: #DDD;
+	font-size: 14px;
+}

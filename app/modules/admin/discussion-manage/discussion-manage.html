@@ -1,0 +1,148 @@
+<div class="forummanagement-container">
+  <div class="forummanagement-sidebar">
+  	<ul>
+  		<li class="active-btn">全部实验</li>
+  		<li ng-repeat="course in vm.course" ng-bind="course"></li>
+  	</ul>
+  </div>
+  <md-content class="md-padding">
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="最新">
+        <md-content class="md-padding">
+          <div class="forummanagement-itembox">
+          	<div class="forummanagement-forum-people">
+          		<img src="images/common/student_icon.jpg" alt="学生">
+          		<span>老师姓名</span>
+          	</div>
+          	<div class="forummanagement-forum-container">
+          		<div class="forummanagement-forum-title">
+          			<i class="from-teacher-icon"></i>
+          			<h3>[通知]周三上课时间调整</h3>
+          		</div>
+          		<div class="forummanagement-forum-answer">
+          			<i></i>
+          			<span></span>
+          			<p>[最新回复]吴丹武:收到~</p>
+          		</div>
+          		<div class="forummangement-forum-tag">
+          			<em>提问时间：18小时前</em>
+          			<a>教务通知</a>
+          		</div>
+          	</div>
+          	<div class="forummanegement-forum-tip">
+          			<a><div>26</div>回复<div></div></a><a><div>126</div>浏览<div></div></a>
+          	</div>
+                 <div class="delect-forum">删除此贴</div></div>
+          		 </md-content>
+        <md-content class="md-padding" ng-repeat="i in vm.response">
+          <div class="forummanagement-itembox">
+          	<div class="forummanagement-forum-people">
+          		<img src="images/common/student_icon.jpg" alt="学生">
+          		<span>学生姓名</span>
+          	</div>
+          	<div class="forummanagement-forum-container">
+          		<div class="forummanagement-forum-title">
+          			<i class="from-student-icon"></i>
+          			<h3>如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?</h3>
+          		</div>
+          		<div class="forummanagement-forum-answer">
+          			<i></i>
+          			<span></span>
+          			<p>嗯～～，这个提问大家都在考虑......</p>
+          		</div>
+          		<div class="forummangement-forum-tag">
+          			<em>提问时间：18小时前</em>
+          			<a>拉伸法测量杨氏弹性模量</a>
+          		</div>
+          	</div>
+          	<div class="forummanegement-forum-tip">
+          			<a><div>26</div>回复<div></div></a><a><div>126</div>浏览<div></div></a>
+          	</div>
+                 <div class="delect-forum">删除此贴</div></div>
+          		 </md-content>
+      </md-tab>
+      <md-tab label="最热门">
+       <md-content class="md-padding">
+          <div class="forummanagement-itembox">
+          	<div class="forummanagement-forum-people">
+          		<img src="images/common/student_icon.jpg" alt="学生">
+          		<span>老师姓名</span>
+          	</div>
+          	<div class="forummanagement-forum-container">
+          		<div class="forummanagement-forum-title">
+          			<i class="from-teacher-icon"></i>
+          			<h3>[通知]周三上课时间调整</h3>
+          		</div>
+          		<div class="forummanagement-forum-answer">
+          			<i></i>
+          			<span></span>
+          			<p>[最新回复]吴丹武:收到~</p>
+          		</div>
+          		<div class="forummangement-forum-tag">
+          			<em>提问时间：18小时前</em>
+          			<a>教务通知</a>
+          		</div>
+          	</div>
+          	<div class="forummanegement-forum-tip">
+          			<a><div>26</div>回复<div></div></a><a><div>126</div>浏览<div></div></a>
+          	</div>
+                 <div class="delect-forum">删除此贴</div></div>
+          		 </md-content>
+        <md-content class="md-padding" ng-repeat="i in vm.response">
+          <div class="forummanagement-itembox">
+          	<div class="forummanagement-forum-people">
+          		<img src="images/common/student_icon.jpg" alt="学生">
+          		<span>学生姓名</span>
+          	</div>
+          	<div class="forummanagement-forum-container">
+          		<div class="forummanagement-forum-title">
+          			<i class="from-student-icon"></i>
+          			<h3>如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?</h3>
+          		</div>
+          		<div class="forummanagement-forum-answer">
+          			<i></i>
+          			<span></span>
+          			<p>嗯～～，这个提问大家都在考虑......</p>
+          		</div>
+          		<div class="forummangement-forum-tag">
+          			<em>提问时间：18小时前</em>
+          			<a>拉伸法测量杨氏弹性模量</a>
+          		</div>
+          	</div>
+          	<div class="forummanegement-forum-tip">
+          			<a><div>26</div>回复<div></div></a><a><div>126</div>浏览<div></div></a>
+          	</div>
+                 <div class="delect-forum">删除此贴</div></div>
+          		 </md-content>
+      </md-tab>
+      <md-tab label="等待回复">
+        <md-content class="md-padding" ng-repeat="i in vm.response">
+          <div class="forummanagement-itembox">
+          	<div class="forummanagement-forum-people">
+          		<img src="images/common/student_icon.jpg" alt="学生">
+          		<span>学生姓名</span>
+          	</div>
+          	<div class="forummanagement-forum-container">
+          		<div class="forummanagement-forum-title">
+          			<i class="from-student-icon"></i>
+          			<h3>如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?如何用拉伸法测量杨氏弹性模量?</h3>
+          		</div>
+          		<div class="forummanagement-forum-answer">
+          			<i></i>
+          			<span></span>
+          			<p>嗯～～，这个提问大家都在考虑......</p>
+          		</div>
+          		<div class="forummangement-forum-tag">
+          			<em>提问时间：18小时前</em>
+          			<a>拉伸法测量杨氏弹性模量</a>
+          		</div>
+          	</div>
+          	<div class="forummanegement-forum-tip">
+          			<a><div>26</div>回复<div></div></a><a><div>126</div>浏览<div></div></a>
+          	</div>
+                 <div class="delect-forum">删除此贴</div></div>
+          		 </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>

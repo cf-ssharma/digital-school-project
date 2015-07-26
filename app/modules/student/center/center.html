@@ -1,0 +1,47 @@
+<div class="stuIndex-container">
+    <div class="stuIndex-board">
+       	<div class="container-warp">
+		   <div class="stuindex-board-left">
+		   	 <h2>最新公告</h2>
+		   	 <p>这里是一些通知，公告，或者其他的一些注意事项的声明.字数应尽量控制在120字以内.这里是一些通知，公告，或者其他的一些注意事项的声明.字数应尽量控制在120字以内.</p>
+		   	 <span class="board-time">2015-06-05</span>
+		   </div>
+		   <div class="stuindex-board-right">
+		   	 <div class="stu-login-box"  md-theme="greenTheme">
+		   	    <h3></h3>
+				<md-content layout-padding class="stu-login-box-input">
+			    <md-input-container md-no-float>
+			      <md-icon md-svg-src="../images/svg/iconfont-yonghunew.svg"></md-icon>
+			      <input ng-model="user.Username" type="text" placeholder="用户名/Username">
+			    </md-input-container>
+			    <md-input-container md-no-float>
+			      <md-icon md-svg-src="../images/svg/iconfont-mima.svg"></md-icon>
+			      <input ng-model="user.Password" type="password" placeholder="密码/Password">
+			    </md-input-container>
+			    <md-button class="md-raised md-primary stu-login-box-btn">立即登录</md-button>
+			    </md-content>
+		   	 </div>
+		   </div>
+	    </div>
+    </div>
+    <div class="container-warp">
+    	<div class="stuindex-container">
+    		<div class="stuindex-title">
+    		课程列表
+	    	</div>
+	    	<div class="stuindex-listbox">
+	    		<ul>
+	    			<li ng-repeat="course in vm.course">
+	    			    <a ui-sref="student.lesson">
+	    			    	<div class="stuindex-list-time">2小时37分钟</div>
+		    			    <div class="stuindex-listbox-img"><img src="../images/student/student-subject-indexpic.jpg" alt=""></div>
+		    				<h4 ng-bind="course"></h4>
+		    				<p ng-cloak><em class="stuindex-active" ng-show="$first">已学习</em><em class="stuindex-disabled" ng-show="$last">未开放</em><em class="stuindex-abled" ng-show="!$first&&!$last">未学习</em>学习{{course}}</p>
+		    				<span>已有300人学习</span>
+	    			    </a>
+	    			</li>
+	    		</ul>
+	    	</div>
+    	</div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "angularjs-all-lazyload",
+  "version": "1.0.0",
+  "author": "milk.lee@qq.com",
+  "repository": "lmk123/angularjs-all-lazyload",
+  "scripts": {
+    "test": "protractor test/protractor.conf.js",
+    "start": "http-server -a 0.0.0.0 -p 8080"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.12",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-changed": "*",
+    "gulp-concat": "*",
+    "gulp-htmlmin": "*",
+    "gulp-jshint": "^1.11.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "*",
+    "gulp-rev-all": "*",
+    "gulp-uglify": "*",
+    "requirejs": "*"
+  }
+}

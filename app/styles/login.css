@@ -1,0 +1,160 @@
+md-input-container.md-greenTheme-theme > md-icon {
+  color: #a5a5a5;
+}
+.login-container {
+  overflow: hidden;
+}
+.login-container .stuindex-title {
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  border-left: 3px solid #30a670;
+  margin: 20px;
+  line-height: 20px;
+  color: #30a670;
+  text-align: left;
+  text-indent: 20px;
+}
+.login-container .stuindex-listbox ul li {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin: 0 0 8px 40px;
+  padding-bottom: 0;
+  width: 280px;
+  height: 270px;
+  -webkit-transition: box-shadow 0.3s ease;
+          transition: box-shadow 0.3s ease;
+  float: left;
+  cursor: pointer;
+}
+.login-container .stuindex-listbox ul li .stuindex-list-time {
+  width: 70px;
+  padding: 2px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.login-container .stuindex-listbox ul li .stuindex-listbox-img {
+  width: 260px;
+  height: 135px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.login-container .stuindex-listbox ul li .stuindex-listbox-img img {
+  width: 260px;
+  height: auto;
+  display: block;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.login-container .stuindex-listbox ul li h4 {
+  width: 100%;
+  height: 14px;
+  line-height: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0 10px 0;
+  text-indent: 10px;
+  color: #333;
+}
+.login-container .stuindex-listbox ul li p {
+  width: 260px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #b4bbbf;
+  padding: 0 10px 0px 10px;
+}
+.login-container .stuindex-listbox ul li p em {
+  padding: 3px;
+  display: inline-block;
+  color: #FFF;
+  line-height: 14px;
+  margin-right: 10px;
+}
+.login-container .stuindex-listbox ul li p .stuindex-active {
+  background-color: #3fb57f;
+}
+.login-container .stuindex-listbox ul li p .stuindex-disabled {
+  background-color: #888180;
+}
+.login-container .stuindex-listbox ul li p .stuindex-abled {
+  background-color: #DFCB40;
+}
+.login-container .stuindex-listbox ul li span {
+  width: 100%;
+  line-height: 20px;
+  display: block;
+  margin: 5px 0 0;
+  font-size: 14px;
+  text-indent: 10px;
+  color: #3fb57f;
+}
+.login-container .stuindex-listbox ul li:hover {
+  box-shadow: 0 2px 8px #bbb;
+}
+.login-container .stuindex-listbox ul li:hover .stuindex-listbox-img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.login-container .stuindex-listbox ul li:hover .stuindex-list-time {
+  right: 27px;
+  opacity: 1;
+}
+.login-board {
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+}
+.login-board .login-board-right {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.login-board .login-board-right .stu-login-box {
+  width: 600px;
+  margin: 30px auto;
+  padding: 10px 0;
+  height: 250px;
+}
+.login-board .login-board-right .stu-login-box md-input-container.md-default-theme .md-input {
+  color: #3fb57f;
+}
+.login-board .login-board-right .stu-login-box h3 {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #4caf50;
+  font-weight: bold;
+  margin: 0 auto;
+  position: relative;
+  color: #333;
+  background: url(../images/common/iconfont-kuaijiedenglu.png) rgba(255, 255, 255, 0.6) center center no-repeat;
+}
+.login-board .login-board-right .stu-login-box md-input-container {
+  padding: 6px;
+  margin-bottom: 22px;
+}
+.login-board .login-board-right .stu-login-box .stu-login-box-input {
+  background-color: transparent;
+  width: 280px;
+  margin: 10px auto;
+}
+.login-board .login-board-right .stu-login-box .stu-login-box-btn {
+  width: 200px;
+  border-radius: 5pc;
+  left: 38px;
+}

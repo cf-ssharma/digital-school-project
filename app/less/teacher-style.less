@@ -1,0 +1,387 @@
+@fontFamily:"Microsoft YaHei", "SimHei", "Arial Unicode MS";
+//至上而下lighter
+@blue-color-1:#1a237e;
+@blue-color-2:#283593;
+@blue-color-3:#303f9f;
+@blue-color-4:#3949ab;
+@blue-color-5:#3f51b5;
+@blue-color-6:#3c6bc0;
+@blue-color-7:#7986cb;
+@blue-color-8:#9fa8da;
+@blue-color-9:#c5cae9;
+@blue-color-10:#e8eaf6;
+@green-color-1:#3FB57F;
+@green-color-2:rgba(48, 166, 112, 1);
+@green-color-3:#43D090;
+// 教师讨论区
+.forummanagement-container{
+		width: 1024px;
+		margin:10px auto;
+		background-color: #FFF;
+		md-tabs.md-default-theme .md-tab.md-active{
+			
+		}
+		md-content.md-default-theme{
+			padding:0;
+		}
+		.forummanagement-sidebar{
+			width: 250px;
+			float: left;
+			margin-right: 10px;
+			ul{
+				width: 100%-2px;
+				li{
+                  width: 100%;
+                  line-height: 20px;
+                  font-size: 13px;
+                  margin: 10px 0;
+                  text-align: left;
+                  text-indent: 10px;
+                  color: #716C6C;
+                  cursor:pointer;
+                  &:hover{
+                  	color: @blue-color-2;
+					border-left:2px solid @blue-color-2;
+                  }
+				}
+				.active-btn{
+					color: @blue-color-2;
+					border-left:2px solid @blue-color-2;
+				}
+			}
+		}
+		.forummanagement-itembox{
+			  width: 1022-260px;
+			  height: 120px;
+			  margin: 10px auto;
+			  float: left;
+			  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+			  position: relative;
+			  &:hover>.delect-forum{
+                        display: block;
+			  }
+			  .delect-forum{
+			  			display: block;
+			  			width: 84px;
+			  			text-align: center;
+			  			float: right;
+			  			line-height: 40px;
+			  			height: 40px;
+			  			font-size: 14px;
+			  			position: absolute;
+			  			right: 0;
+			  			top: 80px;
+			  			color: #787d82;
+			  			cursor: pointer;
+			  			display: none;
+			  			&:hover{
+			  				color: rgb(242, 132, 132);
+			  				text-decoration: underline;
+			  			}
+			  }
+			  .forummanagement-forum-people{
+			  	width: 100px;
+			  	height: 120px;
+			  	float: left;
+			  	img{
+			  		width: 40px;
+			  		height: 40px;
+			  		border-radius: 50%;
+			  		margin: 20px 30px;
+			  	}
+			  	span{
+			  		display: block;
+			  		width: 100px;
+			  		line-height: 14px;
+			  		text-align: center;
+			  		font-size: 14px;
+			  		color:#716C6C;
+			  	}
+			  }
+			  .forummanagement-forum-container{
+                  width: 440px;
+                  height: 120px;
+                  float: left;
+                  .forummanagement-forum-title{
+			  		  width: 440px;
+			  		  height: 40px;
+				  		  .from-teacher-icon{
+	                        display: block;
+				  		  	width: 32px;
+				  		  	height: 32px;
+				  		  	border-radius: 50%;
+				  		  	background: url(../images/common/iconfont-tongzhi.png) center center no-repeat;
+				  		  	background-size:26px;
+				  		  	float: left;
+				  		}
+				  		.from-student-icon{
+				  			display: block;
+				  		  	width: 32px;
+				  		  	height: 32px;
+				  		  	border-radius: 50%;
+				  		  	background: url(../images/common/iconfont-tiwen01.png) center center no-repeat;
+				  		  	float: left;
+				  		}
+			  		  h3{
+			  		  	width: 430px-32px;
+			  		  	text-indent: 10px;
+			  		  	height: 32px;
+			  		  	line-height: 32px;
+			  		  	font-size: 16px;
+			  		  	text-overflow:ellipsis; 
+						white-space:nowrap; 
+						*white-space:nowrap; 
+						overflow:hidden;
+			  		  	float: left;
+			  		  	font-weight: bold;
+			  		  }
+			  	}
+			  	.forummanagement-forum-answer{
+			  		width: 440px;
+			  		height: 40px;
+			  		.from-teacher-icon{
+
+			  		}
+			  		i{
+			  			display: block;
+			  		  	width: 16px;
+			  		  	height: 16px;
+			  		  	margin: 8px 0px 8px 16px;
+			  		  	border-radius: 50%;
+			  		  	background: url(../images/common/iconfont-huifu.png) center center no-repeat;
+			  		  	float: left;
+			  		}
+			  		 p{
+			  		  	width: 430px-32px;
+			  		  	text-indent: 10px;
+			  		  	height: 32px;
+			  		  	line-height: 32px;
+			  		  	font-size: 14px;
+			  		  	text-overflow:ellipsis; 
+						white-space:nowrap; 
+						*white-space:nowrap; 
+						overflow:hidden;
+			  		  	float: left;
+			  		  }
+			  	}
+			  	.forummangement-forum-tag{
+			  		width: 440px;
+			  		height: 40px;
+			  		em{
+			  			display: block;
+			  			width: 150px;
+			  			text-indent: 17px;
+			  			font-size: 14px;
+			  			color: #888181;
+			  			line-height: 40px;
+			  			float: left;
+			  		}
+			  		a{
+			  			  padding: 3px;
+						  color: #14191e;
+						  background: #ddd;
+						  font-size: 13px;
+						  margin: 7px 10px;
+			  			 float:left;
+			  		}			  		
+			  	}
+			  }
+			  .forummanegement-forum-tip{
+			  		width: 120px;
+                    height: 120px;
+                    font-size: 14px;
+                    float: right;
+                    a{
+                    	float: left;
+                    	width: 60px;
+                    	height: 40px;
+                    	margin: 40px auto;
+                    	line-height: 20px;
+                    	text-align: center;
+                    	color: #787d82;
+                    	div{
+                    		width: 60px;
+                    		text-align: center;
+                    		line-height: 20px;
+                    	}
+                    }
+                    >a:last-child{
+                    	width: 59px;
+                    	border-left:1px solid #DDD;
+                    }
+                    >a:first-child{
+                    	color: green;
+                    }
+			  	}
+		}
+	}
+	// 教师成绩管理
+	.grademanagement-header-menu{
+		height: 130px;
+		/**成绩管理工具栏**/
+		.grademanagement-toolbar{
+			float: right;
+		}
+		/**成绩管理搜索栏**/
+		.grademanagement-searchbar{
+			width: 639px;
+			float: right;
+			md-input-container{
+				width: 200px;
+				float: left;
+				margin-left: 45px;
+			}
+			.grademanagement-output-btn{
+				float: left;
+				margin-top: 23px;
+			}
+		}
+		.grademanagement-labeltext{
+			font-size:16px;
+			margin: 1.4em 20px 0 28px;
+			line-height: 30px;
+			float: left;
+		}
+		.grademanagement-menu{
+			float: left;
+		}
+	}
+	/**成绩表格头部**/
+	.grademanagement-grid-title{
+        height: 40px;
+        font-family: @fontFamily;
+        font-size:16px;
+        line-height: 40px;
+        background: @blue-color-5;
+        color: #FFF;
+        text-align: center;
+        ul li{
+        	width: 1024/8px;
+            height: 40px;
+            float: left;
+        }
+	}
+	.grademanagement-grid-date{
+		height: 30px;
+        font-family: @fontFamily;
+        font-size:14px;
+        line-height: 30px;
+        color: #333;
+        text-align: center;
+        display: block;
+        dd{
+        		width: 1024/8px;
+	            height: 30px;
+	            float: left;
+        	}
+	}
+	//教师学习情况
+	.state-container{
+		width: 1024px; 
+		margin:10px auto;
+		.echart-title{
+			width: 100%;
+			height: 30px;
+			margin: 15px auto;
+			line-height: 30px;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+
+		}
+		.state-container-title{
+			width: 100%;
+			height: 65px;			
+			h3{
+				width: 150px;
+				float: left;
+				height: 65px;
+				line-height: 65px;
+				color:@blue-color-2;
+			}
+			.state-phy-seletion{
+				padding:0 5px;
+				float: right;
+			}
+		}
+	}
+	//教师评价样式
+	.mark-container{
+		width: 1024px; 
+		margin:10px auto;
+		overflow: hidden;
+		.mark-select-menu{
+			width: 100%;
+			height: 60px;
+			md-select{
+				float: right;
+				margin-left: 50px;
+			}
+		}
+		.mark-student-list{
+			width: 100%;
+			margin:20px auto;
+			li{
+				width: 100%;
+				height: 50px;
+				padding: 10px 0;
+				border-bottom: 1px solid #E4E4E4;
+				.mark-student-list-left{
+					width: 200px;
+					height: 50px;
+					float: left;
+					h3{
+						display: block;
+						width: 100%;
+						height: 50px;
+						color:#333;
+						font-size: 18px;
+						text-align: center;
+						line-height: 50px;
+						.mark-abled{
+							color: #18AD5E;
+						}
+						.mark-disabled{
+							color: #AD1818;
+						}
+					}
+				}
+				.mark-student-list-data,.mark-student-list-nodata{
+					width: 650px;
+					height: 50px;
+					float: left;
+					color:#747171;
+					.student-study-subject-data-row{
+						width: 650/4px;
+						height: 50px;
+						float: left;	
+						span{
+							display: block;
+							width: 100%;
+							height: 25px;
+							text-align: center;
+							line-height: 25px;
+							font-size: 16px;
+						}
+					}
+				}
+				.mark-student-list-right{
+					width: 1024-650-200px;
+					height: 50px;
+					float: left;
+					a{
+						display: block;
+						height: 50px;
+						width: 100%;
+						text-align: center;
+						line-height: 50px;
+						font-size: 16px;
+						&:hover{
+							color: @blue-color-2;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,71 @@
+<div class="container-warp">
+  <div class="grademanagement-header-menu">
+          <div class="grademanagement-toolbar">
+             <label class="grademanagement-labeltext">实验名称:</label>
+           <div class="grademanagement-menu course-select-menu">
+            <div style="height: 40px;">
+              <md-select ng-model="vm.defaultCourse" placeholder="选择实验">
+                <md-optgroup>
+                  <md-option ng-value="course" ng-repeat="course in vm.course" ng-bind="course"></md-option>
+                </md-optgroup>
+              </md-select>
+            </div>
+          </div>
+          <label class="grademanagement-labeltext">学院:</label>
+          <div class="grademanagement-menu college-select-menu">
+            <div style="height: 51px;">
+              <md-select ng-model="vm.defaultCollege" ng-change="changeCollege();"  placeholder="选择学院">
+                <md-optgroup label="选择学院">
+                  <md-option ng-value="key" ng-repeat="(key,value) in vm.classmanagement" ng-bind="key"></md-option>
+                </md-optgroup>
+              </md-select>
+            </div>
+          </div>
+          <label class="grademanagement-labeltext">专业班级:</label>
+          <div class="grademanagement-menu classes-select-menu">
+            <div style="height: 40px;">
+              <md-select ng-model="vm.defaultClasses" placeholder="选择班级">
+                <md-optgroup label="选择班级">
+                  <md-option ng-value="classes" ng-repeat="classes in vm.classmanagement[vm.defaultCollege]" ng-bind="classes"></md-option>
+                </md-optgroup>
+              </md-select>
+            </div>
+          </div>
+         </div>
+         <div class="grademanagement-searchbar" >
+              <md-button class="md-raised md-primary grademanagement-output-btn">EXCEL导出成绩单</md-button>
+             <md-input-container class="grademanagement-searchbar-input">
+             <label>输入姓名搜索</label>
+             <input ng-model="vm.searchName">
+            </md-input-container>
+           <md-input-container  class="grademanagement-searchbar-input">
+            <label>输入学号搜索</label>
+            <input ng-model="vm.searchNumber">
+           </md-input-container>
+        </div>
+        </div>
+        <div class="grademanagement-grid-title">
+          <ul>
+            <li>学号</li>
+            <li>姓名</li>
+            <li>选择题</li>
+            <li>简答题</li>
+            <li>思考题</li>
+            <li>操作</li>
+            <li>数据处理</li>
+            <li>总分</li>
+          </ul>
+        </div>
+        <dl class="grademanagement-grid-date" ng-repeat="data in vm.gradeDate| filter:vm.searchName|filter:vm.searchNumber" ng-class="{grid_even: $even,grid_odd: $odd}">
+          <dd ng-bind="data.name"></dd>
+          <dd ng-bind="data.number"></dd>
+          <dd ng-bind="data.title_0"></dd>
+          <dd ng-bind="data.title_1"></dd>
+          <dd ng-bind="data.title_2"></dd>
+          <dd ng-bind="data.title_3"></dd>
+          <dd ng-bind="data.title_4"></dd>
+          <dd ng-bind="data.title"></dd>
+          <div ng-if="data.length==0">没有查询到任何数据</div>
+        </dl>
+        </div>
+</div>

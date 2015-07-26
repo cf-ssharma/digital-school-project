@@ -1,0 +1,1679 @@
+@charset "UTF-8";
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+ng\:form {
+  display: block;
+}
+.ng-animate-start {
+  clip: rect(0, auto, auto, 0);
+  -ms-zoom: 1.0001;
+}
+.ng-animate-active {
+  clip: rect(-1px, auto, auto, 0);
+  -ms-zoom: 1;
+}
+.iconfont {
+  font-family: "iconfont";
+  font-size: 16px;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+  background-color: #FFF;
+}
+.grid_even {
+  background: #FFF;
+}
+.grid_odd {
+  background: #e8eaf6;
+}
+.md-button.md-default-theme.md-hue-1.md-primary {
+  color: #FFF;
+  height: 36px;
+}
+.md-select-label {
+  color: #767474;
+}
+.container-warp {
+  width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+md-input-container.md-default-theme > md-icon {
+  color: #B8B7B7;
+}
+/**统一的头部样式**/
+.stu-header .header-menu {
+  background-color: #3fb57f;
+}
+.stu-header .header-menu .menu-btn-active button {
+  background: #30a670;
+  border-radius: 0;
+}
+.stu-header .header-menu .md-button.md-default-theme.md-hue-1:not([disabled]):focus {
+  background: #30a670;
+}
+.stu-header .header-menu .md-button.md-default-theme.md-hue-1:not([disabled]):hover {
+  background-color: #30a670;
+  border-radius: none;
+}
+.stu-header .header-toolbar .header-logo {
+  background: url(../images/student/student-header-logo.png) center center no-repeat;
+  background-size: auto 48px;
+}
+.stu-header .header-toolbar .login-btn {
+  color: #30a670;
+}
+.adm-header .header-menu {
+  background-color: #3f51b5;
+}
+.adm-header .header-menu .menu-btn-active button {
+  background: #283593;
+  border-radius: 0;
+}
+.adm-header .header-menu .md-button.md-default-theme.md-hue-1:not([disabled]):focus {
+  background: #283593;
+}
+.adm-header .header-menu .md-button.md-default-theme.md-hue-1:not([disabled]):hover {
+  background-color: #283593;
+  border-radius: none;
+}
+.adm-header .header-toolbar .header-logo {
+  background: url(../images/admin/admin-header-logo.png) center center no-repeat;
+  background-size: auto 48px;
+}
+.adm-header .header-toolbar .login-btn {
+  color: #9fa8da;
+}
+.header-toolbar {
+  height: 80px;
+  background-color: #FFF;
+  width: 100%;
+}
+.header-toolbar .header-logo {
+  display: block;
+  margin: 16px 0;
+  height: 48px;
+  width: 330px;
+  float: left;
+}
+.header-toolbar .login-btn {
+  background: 0 0;
+  font-size: 16px;
+  line-height: 80px;
+  display: block;
+  text-align: center;
+  height: 80px;
+  float: right;
+}
+.header-menu {
+  height: 36px;
+  width: 100%;
+  min-width: 1024px;
+}
+.header-menu .md-button {
+  padding: 0;
+  margin: 0;
+}
+.header-menu .header-menu-section {
+  margin-left: 10px;
+  float: left;
+}
+/**统一的尾部**/
+.footer {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  margin: 20px auto;
+  color: #DDD;
+  font-size: 14px;
+}
+/**统一的主体大小**/
+.container {
+  /**成绩表格头部**/
+  /**学生名单表格头部**/
+}
+.container .grademanagement-header-menu {
+  height: 130px;
+  /**成绩管理工具栏**/
+  /**成绩管理搜索栏**/
+}
+.container .grademanagement-header-menu .grademanagement-toolbar {
+  float: right;
+}
+.container .grademanagement-header-menu .grademanagement-searchbar {
+  width: 639px;
+  float: right;
+}
+.container .grademanagement-header-menu .grademanagement-searchbar md-input-container {
+  width: 200px;
+  float: left;
+  margin-left: 45px;
+}
+.container .grademanagement-header-menu .grademanagement-searchbar .grademanagement-output-btn {
+  float: left;
+  margin-top: 23px;
+}
+.container .grademanagement-header-menu .grademanagement-labeltext {
+  font-size: 16px;
+  margin: 1.4em 20px 0 28px;
+  line-height: 30px;
+  float: left;
+}
+.container .grademanagement-header-menu .grademanagement-menu {
+  float: left;
+}
+.container .grademanagement-grid-title {
+  height: 40px;
+  font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+  font-size: 16px;
+  line-height: 40px;
+  background: #3f51b5;
+  color: #FFF;
+  text-align: center;
+}
+.container .grademanagement-grid-title ul li {
+  width: 128px;
+  height: 40px;
+  float: left;
+}
+.container .grademanagement-grid-date {
+  height: 30px;
+  font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+  font-size: 14px;
+  line-height: 30px;
+  color: #333;
+  text-align: center;
+  display: block;
+}
+.container .grademanagement-grid-date dd {
+  width: 128px;
+  height: 30px;
+  float: left;
+}
+.container .studentmanagement-header-menu {
+  height: 130px;
+  /**成绩管理工具栏**/
+  /**成绩管理搜索栏**/
+}
+.container .studentmanagement-header-menu .studentmanagement-toolbar {
+  width: 480px;
+  margin-left: 544px;
+}
+.container .studentmanagement-header-menu .studentmanagement-searchbar {
+  width: 629px;
+  float: right;
+}
+.container .studentmanagement-header-menu .studentmanagement-searchbar md-input-container {
+  width: 200px;
+  float: left;
+  margin-left: 45px;
+}
+.container .studentmanagement-header-menu .studentmanagement-searchbar .studentmanagement-output-btn {
+  float: left;
+  margin-top: 23px;
+}
+.container .studentmanagement-header-menu .studentmanagement-labeltext {
+  font-size: 16px;
+  margin: 1.4em 20px 0 40px;
+  line-height: 30px;
+  float: left;
+}
+.container .studentmanagement-header-menu .studentmanagement-menu {
+  float: left;
+}
+.container .studentmanagement-grid-title {
+  height: 40px;
+  font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+  font-size: 16px;
+  line-height: 40px;
+  background: #3f51b5;
+  color: #FFF;
+  text-align: center;
+}
+.container .studentmanagement-grid-title ul li {
+  height: 40px;
+  float: left;
+}
+.container .studentmanagement-grid-date {
+  height: 30px;
+  font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+  font-size: 14px;
+  line-height: 30px;
+  color: #333;
+  text-align: center;
+  display: block;
+}
+.container .studentmanagement-grid-date dd {
+  height: 30px;
+  float: left;
+  margin-top: -1px;
+}
+.container .studentmanagement-grid-date dd section {
+  height: 30px;
+  overflow: hidden;
+}
+.container .studentmanagement-grid-date dd section button {
+  width: 50%;
+}
+.container .studentmanagement-grid-date dd section .md-button {
+  padding: 0;
+  margin: 0;
+}
+.container .studentmanagement-grid-date dd section .md-button .md-ripple-container {
+  border-radius: 0;
+}
+.container .tecmanagement-header-menu {
+  height: 70px;
+}
+.container .tecmanagement-header-menu section {
+  margin-top: 50px;
+}
+.container .tecmanagement-header-menu section .tecmanagement-btn {
+  width: 202px;
+  margin-left: 206.66666667px;
+  float: left;
+}
+.container .tecmanagement-header-menu section .tecmanagement-btn:hover > button {
+  -webkit-transform: translate3d(0, -1px, 0);
+          transform: translate3d(0, -1px, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.container .tecmanagement-header-menu section .tecmanagement-btn button {
+  float: left;
+}
+.container .tecmanagement-header-menu section .tecmanagement-btn div {
+  text-align: left;
+  text-indent: 10px;
+  font-size: 20px;
+  line-height: 56px;
+  float: left;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.container .tecmanagement-header-menu section > .tecmanagement:first-child {
+  width: 49%;
+  border-right: 1px dashed #d2d2d2;
+}
+.container .tecmanagement-container {
+  width: 1024px;
+  margin: 10px auto;
+}
+.container .tecmanagement-container .chipsdemoContactChips md-content.autocomplete {
+  min-height: 250px;
+}
+.container .tecmanagement-container .chipsdemoContactChips .md-item-text.compact {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.container .tecmanagement-container .chipsdemoContactChips .contact-item {
+  box-sizing: border-box;
+}
+.container .tecmanagement-container .chipsdemoContactChips .contact-item.selected {
+  opacity: 0.5;
+}
+.container .tecmanagement-container .chipsdemoContactChips .contact-item.selected h3 {
+  opacity: 0.5;
+}
+.container .tecmanagement-container .chipsdemoContactChips .contact-item .md-list-item-text {
+  padding: 14px 0;
+}
+.container .tecmanagement-container .chipsdemoContactChips .contact-item .md-list-item-text h3 {
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1.2em !important;
+}
+.container .tecmanagement-container .chipsdemoContactChips .contact-item .md-list-item-text h3,
+.container .tecmanagement-container .chipsdemoContactChips .contact-item .md-list-item-text p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (min-width: 900px) {
+  .container .tecmanagement-container .chipsdemoContactChips .contact-item {
+    float: left;
+    width: 33%;
+  }
+}
+.container .tecmanagement-container .chipsdemoContactChips md-contact-chips {
+  margin-bottom: 10px;
+}
+.container .tecmanagement-container .chipsdemoContactChips .md-chips {
+  padding: 5px 0 8px;
+}
+.container .tecmanagement-container .chipsdemoContactChips .fixedRows {
+  height: 250px;
+  overflow: hidden;
+}
+.container .tecmanagement-container md-list-item.selected {
+  display: none;
+}
+.container .tecmanagement-container .tecmanagement-tecname {
+  font-size: 20px;
+  border-left: 3px solid #283593;
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  text-indent: 20px;
+  text-align: left;
+  margin: 15px auto;
+  color: #535d90;
+}
+.container .phymanagement-container {
+  margin: 10px auto;
+  width: 1024px;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.container .phymanagement-container .phymanagement-main {
+  width: 754px;
+  float: left;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-subject .edui-editor {
+  margin: 20px auto;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-title {
+  display: block;
+  width: 754px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #3F51B5;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-title span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4px 10px;
+  float: right;
+  width: 32px;
+  height: 32px;
+  background: url(../images/common/iconfont-tianjia.png) center center no-repeat;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-solution-item,
+.container .phymanagement-container .phymanagement-main .phymanagement-short-item {
+  width: 754px;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-radio-item {
+  width: 754px;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-radio-item md-radio-button {
+  width: 21%;
+  float: left;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-multi-item {
+  width: 754px;
+}
+.container .phymanagement-container .phymanagement-main .phymanagement-multi-item md-checkbox {
+  width: 125.66666667px;
+  margin-left: 0;
+  margin-right: 0;
+  float: left;
+}
+.container .phymanagement-container .phymanagement-sidebar {
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+.container .phymanagement-container .phymanagement-sidebar ul {
+  width: 98%;
+}
+.container .phymanagement-container .phymanagement-sidebar ul li {
+  width: 100%;
+  line-height: 20px;
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: left;
+  text-indent: 10px;
+  color: #716C6C;
+  cursor: pointer;
+}
+.container .phymanagement-container .phymanagement-sidebar ul li:hover {
+  color: #283593;
+  border-left: 2px solid #283593;
+}
+.container .phymanagement-container .phymanagement-sidebar ul .active-btn {
+  color: #283593;
+  border-left: 2px solid #283593;
+}
+.container .boardmanagement-container {
+  width: 1024px;
+  margin: 10px auto;
+}
+.container .boardmanagement-container h3 {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin: 30px auto;
+  border-bottom: 2px solid #3949ab;
+  color: #3949ab;
+}
+.container .boardmanagement-container .boardmanagement-editbox-btn {
+  width: 104px;
+  margin: 10px auto;
+}
+.container .boardmanagement-container .boardmanagement-spliceline {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  text-align: center;
+  border-top: 1px dashed #DDD;
+}
+.container .boardmanagement-container .boardmanagement-preview {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
+  text-indent: 40px;
+  word-break: break-all;
+}
+.container .boardmanagement-container .boardmanagement-preview-time {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  line-height: 40px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: right;
+}
+.container .forummanagement-container {
+  width: 1024px;
+  margin: 10px auto;
+  background-color: #FFF;
+}
+.container .forummanagement-container md-content.md-default-theme {
+  padding: 0;
+}
+.container .forummanagement-container .forummanagement-sidebar {
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+.container .forummanagement-container .forummanagement-sidebar ul {
+  width: 98%;
+}
+.container .forummanagement-container .forummanagement-sidebar ul li {
+  width: 100%;
+  line-height: 20px;
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: left;
+  text-indent: 10px;
+  color: #716C6C;
+  cursor: pointer;
+}
+.container .forummanagement-container .forummanagement-sidebar ul li:hover {
+  color: #283593;
+  border-left: 2px solid #283593;
+}
+.container .forummanagement-container .forummanagement-sidebar ul .active-btn {
+  color: #283593;
+  border-left: 2px solid #283593;
+}
+.container .forummanagement-container .forummanagement-itembox {
+  width: 762px;
+  height: 120px;
+  margin: 10px auto;
+  float: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.container .forummanagement-container .forummanagement-itembox:hover > .delect-forum {
+  display: block;
+}
+.container .forummanagement-container .forummanagement-itembox .delect-forum {
+  display: block;
+  width: 84px;
+  text-align: center;
+  float: right;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  color: #787d82;
+  cursor: pointer;
+  display: none;
+}
+.container .forummanagement-container .forummanagement-itembox .delect-forum:hover {
+  color: #f28484;
+  text-decoration: underline;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-people {
+  width: 100px;
+  height: 120px;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-people img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 20px 30px;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-people span {
+  display: block;
+  width: 100px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #716C6C;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container {
+  width: 440px;
+  height: 120px;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title {
+  width: 440px;
+  height: 40px;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title .from-teacher-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-tongzhi.png) center center no-repeat;
+  background-size: 26px;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title .from-student-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-tiwen01.png) center center no-repeat;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title h3 {
+  width: 398px;
+  text-indent: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  *white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  font-weight: bold;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer {
+  width: 440px;
+  height: 40px;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 8px 0px 8px 16px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-huifu.png) center center no-repeat;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer p {
+  width: 398px;
+  text-indent: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  *white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag {
+  width: 440px;
+  height: 40px;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag em {
+  display: block;
+  width: 150px;
+  text-indent: 17px;
+  font-size: 14px;
+  color: #888181;
+  line-height: 40px;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag a {
+  padding: 3px;
+  color: #14191e;
+  background: #ddd;
+  font-size: 13px;
+  margin: 7px 10px;
+  float: left;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanegement-forum-tip {
+  width: 120px;
+  height: 120px;
+  font-size: 14px;
+  float: right;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanegement-forum-tip a {
+  float: left;
+  width: 60px;
+  height: 40px;
+  margin: 40px auto;
+  line-height: 20px;
+  text-align: center;
+  color: #787d82;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanegement-forum-tip a div {
+  width: 60px;
+  text-align: center;
+  line-height: 20px;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanegement-forum-tip > a:last-child {
+  width: 59px;
+  border-left: 1px solid #DDD;
+}
+.container .forummanagement-container .forummanagement-itembox .forummanegement-forum-tip > a:first-child {
+  color: green;
+}
+.container .stuforummanagement-container {
+  width: 1024px;
+  margin: 10px auto;
+  background-color: #FFF;
+}
+.container .stuforummanagement-container md-content.md-default-theme {
+  padding: 0;
+}
+.container .stuforummanagement-container .forummanagement-sidebar {
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+.container .stuforummanagement-container .forummanagement-sidebar .forummanagement-sidebar-newquestion {
+  width: 250px;
+  height: 50px;
+  margin: 20px auto 30px auto;
+  color: #888180;
+}
+.container .stuforummanagement-container .forummanagement-sidebar ul {
+  width: 98%;
+}
+.container .stuforummanagement-container .forummanagement-sidebar ul li {
+  width: 100%;
+  line-height: 20px;
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: left;
+  text-indent: 10px;
+  color: #716C6C;
+  cursor: pointer;
+}
+.container .stuforummanagement-container .forummanagement-sidebar ul li:hover {
+  color: #3fb57f;
+  border-left: 2px solid #3fb57f;
+}
+.container .stuforummanagement-container .forummanagement-sidebar ul .active-btn {
+  color: #3fb57f;
+  border-left: 2px solid #3fb57f;
+}
+.container .stuforummanagement-container md-tabs.md-default-theme md-ink-bar {
+  color: #43d090;
+  background-color: #43d090;
+}
+.container .stuforummanagement-container .forummanagement-itembox {
+  width: 762px;
+  height: 120px;
+  margin: 10px auto;
+  float: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.container .stuforummanagement-container .forummanagement-itembox:hover > .delect-forum {
+  display: block;
+}
+.container .stuforummanagement-container .forummanagement-itembox .delect-forum {
+  display: block;
+  width: 84px;
+  text-align: center;
+  float: right;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  color: #787d82;
+  cursor: pointer;
+  display: none;
+}
+.container .stuforummanagement-container .forummanagement-itembox .delect-forum:hover {
+  color: #f28484;
+  text-decoration: underline;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-people {
+  width: 100px;
+  height: 120px;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-people img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 20px 30px;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-people span {
+  display: block;
+  width: 100px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #716C6C;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container {
+  width: 440px;
+  height: 120px;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title {
+  width: 440px;
+  height: 40px;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title .from-teacher-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-tongzhi.png) center center no-repeat;
+  background-size: 26px;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title .from-student-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-tiwen01.png) center center no-repeat;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title h3 {
+  width: 398px;
+  text-indent: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  *white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  font-weight: bold;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer {
+  width: 440px;
+  height: 40px;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 8px 0px 8px 16px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-huifu.png) center center no-repeat;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer p {
+  width: 398px;
+  text-indent: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  *white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag {
+  width: 440px;
+  height: 40px;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag em {
+  display: block;
+  width: 150px;
+  text-indent: 17px;
+  font-size: 14px;
+  color: #888181;
+  line-height: 40px;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag a {
+  padding: 3px;
+  color: #14191e;
+  background: #ddd;
+  font-size: 13px;
+  margin: 7px 10px;
+  float: left;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanegement-forum-tip {
+  width: 120px;
+  height: 120px;
+  font-size: 14px;
+  float: right;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanegement-forum-tip a {
+  float: left;
+  width: 60px;
+  height: 40px;
+  margin: 40px auto;
+  line-height: 20px;
+  text-align: center;
+  color: #787d82;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanegement-forum-tip a div {
+  width: 60px;
+  text-align: center;
+  line-height: 20px;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanegement-forum-tip > a:last-child {
+  width: 59px;
+  border-left: 1px solid #DDD;
+}
+.container .stuforummanagement-container .forummanagement-itembox .forummanegement-forum-tip > a:first-child {
+  color: green;
+}
+.container .login-container {
+  overflow: hidden;
+}
+.container .login-container .stuindex-title {
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  border-left: 3px solid #30a670;
+  margin: 20px;
+  line-height: 20px;
+  color: #30a670;
+  text-align: left;
+  text-indent: 20px;
+}
+.container .login-container .stuindex-listbox ul li {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin: 0 0 8px 40px;
+  padding-bottom: 0;
+  width: 280px;
+  height: 270px;
+  -webkit-transition: box-shadow 0.3s ease;
+          transition: box-shadow 0.3s ease;
+  float: left;
+  cursor: pointer;
+}
+.container .login-container .stuindex-listbox ul li .stuindex-list-time {
+  width: 70px;
+  padding: 2px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.container .login-container .stuindex-listbox ul li .stuindex-listbox-img {
+  width: 260px;
+  height: 135px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container .login-container .stuindex-listbox ul li .stuindex-listbox-img img {
+  width: 260px;
+  height: auto;
+  display: block;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.container .login-container .stuindex-listbox ul li h4 {
+  width: 100%;
+  height: 14px;
+  line-height: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0 10px 0;
+  text-indent: 10px;
+  color: #333;
+}
+.container .login-container .stuindex-listbox ul li p {
+  width: 260px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #b4bbbf;
+  padding: 0 10px 0px 10px;
+}
+.container .login-container .stuindex-listbox ul li p em {
+  padding: 3px;
+  display: inline-block;
+  color: #FFF;
+  line-height: 14px;
+  margin-right: 10px;
+}
+.container .login-container .stuindex-listbox ul li p .stuindex-active {
+  background-color: #3fb57f;
+}
+.container .login-container .stuindex-listbox ul li p .stuindex-disabled {
+  background-color: #888180;
+}
+.container .login-container .stuindex-listbox ul li p .stuindex-abled {
+  background-color: #DFCB40;
+}
+.container .login-container .stuindex-listbox ul li span {
+  width: 100%;
+  line-height: 20px;
+  display: block;
+  margin: 5px 0 0;
+  font-size: 14px;
+  text-indent: 10px;
+  color: #3fb57f;
+}
+.container .login-container .stuindex-listbox ul li:hover {
+  box-shadow: 0 2px 8px #bbb;
+}
+.container .login-container .stuindex-listbox ul li:hover .stuindex-listbox-img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.container .login-container .stuindex-listbox ul li:hover .stuindex-list-time {
+  right: 27px;
+  opacity: 1;
+}
+.container .login-board {
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+}
+.container .login-board .login-board-right {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.container .login-board .login-board-right .stu-login-box {
+  width: 600px;
+  margin: 30px auto;
+  padding: 10px 0;
+  height: 250px;
+}
+.container .login-board .login-board-right .stu-login-box md-input-container.md-default-theme .md-input {
+  color: #3fb57f;
+}
+.container .login-board .login-board-right .stu-login-box h3 {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #4caf50;
+  font-weight: bold;
+  margin: 0 auto;
+  position: relative;
+  color: #333;
+  background: url(../images/common/iconfont-kuaijiedenglu.png) rgba(255, 255, 255, 0.6) center center no-repeat;
+}
+.container .login-board .login-board-right .stu-login-box md-input-container {
+  padding: 6px;
+  margin-bottom: 22px;
+}
+.container .login-board .login-board-right .stu-login-box .stu-login-box-input {
+  background-color: transparent;
+  width: 280px;
+  margin: 10px auto;
+}
+.container .login-board .login-board-right .stu-login-box .stu-login-box-btn {
+  width: 200px;
+  border-radius: 5pc;
+  left: 38px;
+}
+.container .state-container {
+  width: 1024px;
+  margin: 10px auto;
+}
+.container .state-container .echart-title {
+  width: 100%;
+  height: 30px;
+  margin: 15px auto;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.container .state-container .state-container-title {
+  width: 100%;
+  height: 65px;
+}
+.container .state-container .state-container-title h3 {
+  width: 150px;
+  float: left;
+  height: 65px;
+  line-height: 65px;
+  color: #283593;
+}
+.container .state-container .state-container-title .state-phy-seletion {
+  padding: 0 5px;
+  float: right;
+}
+.container .mark-container {
+  width: 1024px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.container .mark-container .mark-select-menu {
+  width: 100%;
+  height: 60px;
+}
+.container .mark-container .mark-select-menu md-select {
+  float: right;
+  margin-left: 50px;
+}
+.container .mark-container .mark-student-list {
+  width: 100%;
+  margin: 20px auto;
+}
+.container .mark-container .mark-student-list li {
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E4E4E4;
+}
+.container .mark-container .mark-student-list li .mark-student-list-left {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+.container .mark-container .mark-student-list li .mark-student-list-left h3 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}
+.container .mark-container .mark-student-list li .mark-student-list-left h3 .mark-abled {
+  color: #18AD5E;
+}
+.container .mark-container .mark-student-list li .mark-student-list-left h3 .mark-disabled {
+  color: #AD1818;
+}
+.container .mark-container .mark-student-list li .mark-student-list-data,
+.container .mark-container .mark-student-list li .mark-student-list-nodata {
+  width: 650px;
+  height: 50px;
+  float: left;
+  color: #747171;
+}
+.container .mark-container .mark-student-list li .mark-student-list-data .student-study-subject-data-row,
+.container .mark-container .mark-student-list li .mark-student-list-nodata .student-study-subject-data-row {
+  width: 162.5px;
+  height: 50px;
+  float: left;
+}
+.container .mark-container .mark-student-list li .mark-student-list-data .student-study-subject-data-row span,
+.container .mark-container .mark-student-list li .mark-student-list-nodata .student-study-subject-data-row span {
+  display: block;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+}
+.container .mark-container .mark-student-list li .mark-student-list-right {
+  width: 174px;
+  height: 50px;
+  float: left;
+}
+.container .mark-container .mark-student-list li .mark-student-list-right a {
+  display: block;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+.container .mark-container .mark-student-list li .mark-student-list-right a:hover {
+  color: #283593;
+  text-decoration: underline;
+}
+.container .stuIndex-container .stuindex-container {
+  overflow: hidden;
+}
+.container .stuIndex-container .stuindex-container .stuindex-title {
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  border-left: 3px solid #30a670;
+  margin: 20px;
+  line-height: 20px;
+  color: #30a670;
+  text-align: left;
+  text-indent: 20px;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin: 0 0 8px 40px;
+  padding-bottom: 0;
+  width: 280px;
+  height: 270px;
+  -webkit-transition: box-shadow 0.3s ease;
+          transition: box-shadow 0.3s ease;
+  float: left;
+  cursor: pointer;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li .stuindex-list-time {
+  width: 70px;
+  padding: 2px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li .stuindex-listbox-img {
+  width: 260px;
+  height: 135px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li .stuindex-listbox-img img {
+  width: 260px;
+  height: auto;
+  display: block;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li h4 {
+  width: 100%;
+  height: 14px;
+  line-height: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0 10px 0;
+  text-indent: 10px;
+  color: #333;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li p {
+  width: 260px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #b4bbbf;
+  padding: 0 10px 0px 10px;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li p em {
+  padding: 3px;
+  display: inline-block;
+  color: #FFF;
+  line-height: 14px;
+  margin-right: 10px;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li p .stuindex-active {
+  background-color: #3fb57f;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li p .stuindex-disabled {
+  background-color: #888180;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li p .stuindex-abled {
+  background-color: #DFCB40;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li span {
+  width: 100%;
+  line-height: 20px;
+  display: block;
+  margin: 5px 0 0;
+  font-size: 14px;
+  text-indent: 10px;
+  color: #3fb57f;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li:hover {
+  box-shadow: 0 2px 8px #bbb;
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li:hover .stuindex-listbox-img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.container .stuIndex-container .stuindex-container .stuindex-listbox ul li:hover .stuindex-list-time {
+  right: 27px;
+  opacity: 1;
+}
+.container .stuIndex-container .stuIndex-board {
+  width: 100%;
+  height: 350px;
+  background: url(../images/student/unlogin.jpg) 50% 50%;
+  background-size: cover;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-left {
+  width: 492px;
+  height: 280px;
+  padding: 10px;
+  float: left;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-left h2 {
+  width: 100%;
+  height: 40px;
+  margin-top: 50px;
+  line-height: 40px;
+  text-align: center;
+  text-indent: 10px;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #FFF;
+  color: #FFF;
+  font-size: 24px;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-left p {
+  width: 100%;
+  font-size: 16px;
+  margin: 20px auto;
+  color: #FFF;
+  line-height: 40px;
+  text-align: left;
+  text-indent: 32px;
+  max-height: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-left .board-time {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #FFF;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right {
+  width: 492px;
+  height: 100%;
+  float: left;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right md-input-container.md-default-theme .md-input {
+  border: none;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box {
+  width: 350px;
+  margin: 30px 100px 30px 140px;
+  padding: 10px 0;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box md-input-container.md-default-theme .md-input {
+  color: #3fb57f;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box md-input-container {
+  background-color: #FFF;
+  border-left: 3px solid #4CAF50;
+  -webkit-transition: all .6s ease;
+          transition: all .6s ease;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box h3 {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #4caf50;
+  font-weight: bold;
+  margin: 0 auto;
+  background: url(../images/common/iconfont-kuaijiedenglu.png) rgba(255, 255, 255, 0.6) center center no-repeat;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box md-input-container {
+  padding: 6px;
+  margin-bottom: 22px;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box .stu-login-box-input {
+  background-color: transparent;
+  width: 280px;
+  margin: 10px auto;
+}
+.container .stuIndex-container .stuIndex-board .stuindex-board-right .stu-login-box .stu-login-box-btn {
+  width: 200px;
+  border-radius: 5pc;
+  left: 38px;
+}
+.container .stulesson-container {
+  width: 720px;
+  margin: 20px 10px;
+  float: left;
+}
+.container .stulesson-container .stulesson-base-content {
+  border: 1px solid #F4F4F4;
+}
+.container .stulesson-container .stulesson-base-content img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container .stulesson-container .stulesson-base-content p {
+  text-align: left;
+  text-indent: 32px;
+  font-size: 15px;
+  line-height: 42px;
+}
+.container .stulesson-sidebar {
+  width: 262px;
+  margin: 35px 10px;
+  float: left;
+}
+.container .stulesson-sidebar ul {
+  width: 232px;
+  margin: 0 15px;
+  border-right: 1px dashed #888180;
+}
+.container .stulesson-sidebar ul li {
+  height: 30px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  line-height: 30px;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.container .stulesson-sidebar ul li .stulessonStepIcon {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/student/iconfont-weibiaoti2xiayiye.png) center center no-repeat;
+}
+.container .stulesson-sidebar ul li .stulessonIcon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: -6px;
+  background-color: #FFF;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #888180;
+}
+.container .stulesson-sidebar ul .stulessonStepActive {
+  font-size: 18px;
+  color: #3fb57f;
+}
+.container .stulesson-sidebar ul .stulessonStepActive .stulessonIcon {
+  border-color: #3fb57f;
+}
+.container .stulesson-sidebar ul .stulessonStepDisabled {
+  font-size: 16px;
+  color: #888180;
+}
+.container .student-zone-contaner {
+  margin: 10px auto;
+  width: 1024px;
+  overflow: hidden;
+}
+.container .student-zone-contaner .student-zone-sidebar {
+  width: 220px;
+  height: 400px;
+  float: left;
+  margin-right: 10px;
+}
+.container .student-zone-contaner .student-zone-sidebar img {
+  width: 120px;
+  height: auto;
+  padding: 0 50px;
+}
+.container .student-zone-contaner .student-zone-sidebar h3 {
+  width: 160px;
+  line-height: 40px;
+  text-align: left;
+  margin: 0 30px;
+  border-bottom: 1px dashed #DDD;
+  font-size: 20px;
+}
+.container .student-zone-contaner .student-zone-sidebar ul {
+  width: 180px;
+  padding: 0 20px;
+}
+.container .student-zone-contaner .student-zone-sidebar ul li {
+  width: 180px;
+  text-align: left;
+  font-size: 14px;
+  color: #888180;
+  line-height: 24px;
+  margin-top: 20px;
+  display: block;
+}
+.container .student-zone-contaner .student-zone-sidebar ul li .user-study-info-icon {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 24px;
+}
+.container .student-zone-contaner .student-zone-sidebar ul li .grade-icon {
+  background: url(../images/student/iconfont-xiaoshou.png) center center no-repeat;
+}
+.container .student-zone-contaner .student-zone-sidebar ul li .studytime-icon {
+  background: url(../images/student/iconfont-shijian.png) center center no-repeat;
+}
+.container .student-zone-contaner .student-zone-sidebar ul li .quesion-icon {
+  background: url(../images/student/iconfont-yiwen.png) center center no-repeat;
+}
+.container .student-zone-contaner .student-zone-sidebar ul li .answer-icon {
+  background: url(../images/student/iconfont-huifu.png) center center no-repeat;
+}
+.container .student-zone-contaner .student-zone-contain {
+  width: 790px;
+  float: left;
+}
+.container .student-zone-contaner .student-zone-contain h1 {
+  width: 788px;
+  border-left: 2px solid #3fb57f;
+  color: #3fb57f;
+  font-size: 16px;
+  text-align: left;
+  text-indent: 10px;
+  line-height: 18px;
+  margin: 10px auto;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar {
+  width: 3px;
+  height: 1600px;
+  background-color: #DDD;
+  margin: 60px auto 110px auto;
+  position: relative;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleActive {
+  background-color: #3fb57f;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleActive i {
+  border-color: #3fb57f;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleActive .studentsubjectboxbl {
+  border-color: #3fb57f;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleActive .studentsubjectboxbr {
+  border-color: #3fb57f;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleBlur {
+  background-color: #DDD;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleBlur i {
+  border-color: #DDD;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleBlur .studentsubjectboxbl {
+  border-color: #DDD;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .circleBlur .studentsubjectboxbr {
+  border-color: #DDD;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .trianglebr {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 260px;
+  height: 10px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .trianglebl {
+  position: absolute;
+  left: -256px;
+  top: 4px;
+  width: 260px;
+  height: 10px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-left-style: solid;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr {
+  width: 360px;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 18px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr img {
+  height: 80px;
+  padding: 10px 0;
+  float: left;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr .student-study-subject {
+  float: left;
+  width: 250px;
+  height: 80px;
+  margin: 10px auto;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr .student-study-subject p {
+  width: 100%;
+  text-indent: 13px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr .student-study-subject .student-study-subject-data {
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #888180;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr .student-study-subject .student-study-subject-data > .student-study-subject-data-row:last-child {
+  border-right: none;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr .student-study-subject .student-study-subject-data .student-study-subject-data-row {
+  width: 24%;
+  margin-top: 2px;
+  height: 50px;
+  float: left;
+  border-right: 1px solid #888180;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbr .student-study-subject .student-study-subject-data .student-study-subject-data-row span {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #888180;
+  text-align: center;
+  display: block;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl {
+  width: 360px;
+  height: 100px;
+  margin-left: -395px;
+  margin-top: 18px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl img {
+  height: 80px;
+  padding: 10px 0;
+  float: right;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl .student-study-subject {
+  float: right;
+  width: 250px;
+  height: 80px;
+  margin: 10px auto;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl .student-study-subject p {
+  padding-right: 13px;
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl .student-study-subject .student-study-subject-data {
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #888180;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl .student-study-subject .student-study-subject-data > .student-study-subject-data-row:last-child {
+  border-right: none;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl .student-study-subject .student-study-subject-data .student-study-subject-data-row {
+  width: 24%;
+  margin-top: 2px;
+  height: 50px;
+  float: right;
+  border-right: 1px solid #888180;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar ul li .student-study-real-circle .studentsubjectboxbl .student-study-subject .student-study-subject-data .student-study-subject-data-row span {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #888180;
+  text-align: center;
+  display: block;
+}
+.container .student-zone-contaner .student-zone-contain .student-study-bg-processbar .student-study-real-processbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3fb57f;
+  height: 0px;
+  width: 3px;
+  -webkit-transition: height 1s ease;
+          transition: height 1s ease;
+}

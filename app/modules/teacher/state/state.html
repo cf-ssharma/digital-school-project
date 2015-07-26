@@ -1,0 +1,20 @@
+<div class="state-container">
+	<div class="state-container-title">
+		<h3>学习情况</h3>
+		<div class="state-phy-seletion">
+			<div class="grademanagement-menu course-select-menu">
+            <div style="height: 40px;">
+              <md-select ng-model="vm.defaultCourse" placeholder="选择实验">
+                  <md-option ng-value="course" ng-selected="$first" ng-repeat="course in vm.course" ng-bind="course"></md-option>
+              </md-select>
+            </div>
+            </div>
+		</div>
+	</div>
+  <h4 class="echart-title">各个班级单/多选题答题情况</h4>
+  <echarts option="echartOption"  ng-model="class"></echarts>
+  <h4 class="echart-title">各道单选题答题情况</h4>
+  <echarts option="echartOption" ng-model="radiusQuestion"></echarts>
+  <h4 class="echart-title">各道多选题答题情况</h4>
+  <echarts option="echartOption" ng-model="checkboxQuestion"></echarts>
+</div>

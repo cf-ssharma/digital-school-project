@@ -1,0 +1,20 @@
+<div class="container-warp">
+
+	<div class="stulesson-container">
+	   <div class="stulesson-base-content">
+	   	   <md-content class="md-padding">
+		    <md-tabs md-dynamic-height md-border-bottom>
+		      <md-tab label="{{lesson.title}}" ng-repeat="lesson in vm.lesson | orderBy:id">
+		        <md-content class="md-padding" ng-bind-html="lesson.content">
+		        </md-content>
+		      </md-tab>
+		    </md-tabs>
+		  </md-content>
+	   </div>
+    </div>
+	<div class="stulesson-sidebar">
+	    <ul>
+	    	<li ng-class="{stulessonStepActive:$first,stulessonStepDisabled:!$first}"ng-repeat="lessonstep in vm.lessonstep"><div ng-if="$first" class="stulessonStepIcon"></div><span ng-bind="lessonstep" ></span><em class="stulessonIcon"></em></li>
+	    </ul>
+	</div>
+</div>

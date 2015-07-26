@@ -1,0 +1,32 @@
+<div class="mark-container">
+	<div class="mark-select-menu">
+	    <md-select ng-model="vm.defaultClasses" placeholder="班级">
+                  <md-option ng-value="classes" ng-selected="$first" ng-repeat="classes in vm.classes" ng-bind="classes"></md-option>
+        </md-select>
+		<md-select ng-model="vm.defaultCourse" placeholder="选择实验">
+                  <md-option ng-value="course" ng-selected="$first" ng-repeat="course in vm.course" ng-bind="course"></md-option>
+        </md-select>
+	</div>
+	<ul class="mark-student-list">
+		<li ng-repeat="rsp in vm.response">
+           <div class="mark-student-list-left">
+           	 <h3>吴丹武<span class="mark-abled" ng-show="!$first">(已评价)</span><span class="mark-disabled" ng-show="$first">(未评价)</span></h3>
+           </div>
+           <div class="mark-student-list-nodata" ng-show="$first">
+           	                    <div class="student-study-subject-data-row"><span>50</span><span>选择题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>暂无</span><span>主观题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>暂无</span><span>操作题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>暂无</span><span>数据处理</span></div>
+           </div>
+           <div class="mark-student-list-data" ng-show="!$first">
+           	 					<div class="student-study-subject-data-row"><span>12</span><span>选择题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>22</span><span>主观题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>30</span><span>操作题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>40</span><span>数据处理</span></div>
+           </div>
+           <div class="mark-student-list-right">
+           	                    <a href="#">答题详情</a>
+           </div>
+		</li>
+	</ul>
+</div>

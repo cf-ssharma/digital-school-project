@@ -1,0 +1,41 @@
+<div class="student-zone-contaner">
+	<div class="student-zone-sidebar">
+	    <img src="images/student/student-pic.jpg" alt="">
+		<h3>吴丹武</h3>
+        <ul>
+        	<li><span class="user-study-info-icon grade-icon"></span>排名:95(前16%)</li>
+        	<li><span class="user-study-info-icon studytime-icon"></span>学习:208小时51分</li>
+        	<li><span class="user-study-info-icon quesion-icon"></span>提问:12条</li>
+        	<li><span class="user-study-info-icon answer-icon"></span>回答:10条</li>
+        </ul>
+	</div>
+	<div class="student-zone-contain">
+		<h1>学习情况</h1>
+		<div class="student-study-bg-processbar">
+			<div class="student-study-real-processbar">
+            </div>
+            <ul>
+            	<li ng-repeat="course in vm.course">
+            		<div class="student-study-real-circle" ng-class="{circleActive:$first,circleBlur:!$first}" ng-style="{'top':$index*80-4+'px'}">
+            		    <i ng-class="{trianglebr: $even,trianglebl: $odd}"></i>	
+            		    <div ng-class="{studentsubjectboxbr: $even,studentsubjectboxbl: $odd}">
+            		    	<img src="images/student/student-subject-pic.jpg" alt="大学物理实验">
+	            			<div class="student-study-subject">
+	            			  <p ng-bind="course"></p>
+	                          <div class="student-study-subject-data" ng-if='$first'>
+	                          	<div class="student-study-subject-data-row"><span>12</span><span>选择题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>22</span><span>主观题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>30</span><span>操作题</span></div>
+	                          	<div class="student-study-subject-data-row"><span>40</span><span>数据处理</span></div>
+	                          </div>
+	                          <div class="student-study-subject-data" ng-if='!$first'>
+	                          	暂无数据
+	                          </div>
+	            			</div>
+            		    </div>
+            		</div>
+            	</li>
+            </ul>
+		</div>
+	</div>
+</div>

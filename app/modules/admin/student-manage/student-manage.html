@@ -1,0 +1,63 @@
+<div class="container-warp">
+  <div class="studentmanagement-header-menu">
+          <div class="studentmanagement-toolbar">
+          <label class="studentmanagement-labeltext">学院:</label>
+          <div class="studentmanagement-menu college-select-menu">
+            <div style="height: 40px;">
+              <md-select ng-model="vm.defaultCollege" ng-change="changeCollege();"  placeholder="选择学院">
+                <md-optgroup label="选择学院">
+                  <md-option ng-value="key" ng-repeat="(key,value) in vm.classmanagement" ng-bind="key"></md-option>
+                </md-optgroup>
+              </md-select>
+            </div>
+          </div>
+          <label class="studentmanagement-labeltext">专业班级:</label>
+          <div class="studentmanagement-menu classes-select-menu">
+            <div style="height: 40px;">
+              <md-select ng-model="vm.defaultClasses" placeholder="选择班级">
+                <md-optgroup label="选择班级">
+                  <md-option ng-value="classes" ng-repeat="classes in vm.classmanagement[vm.defaultCollege]" ng-bind="classes"></md-option>
+                </md-optgroup>
+              </md-select>
+            </div>
+          </div>
+         </div>
+         <div class="studentmanagement-searchbar" >
+              <md-button class="md-raised md-primary studentmanagement-output-btn">EXCEL导入学生</md-button>
+             <md-input-container class="studentmanagement-searchbar-input">
+             <label>输入姓名搜索</label>
+             <input ng-model="vm.searchName">
+            </md-input-container>
+           <md-input-container  class="studentmanagement-searchbar-input">
+            <label>输入学号搜索</label>
+            <input ng-model="vm.searchNumber">
+           </md-input-container>
+        </div>
+        </div>
+        <div class="studentmanagement-grid-title">
+          <ul>
+            <li style="width:150px;">学号</li>
+            <li style="width:150px;">姓名</li>
+            <li style="width:250px;">学院</li>
+            <li style="width:250px;">班级</li>
+            <li style="width:224px;">操作</li>
+          </ul>
+        </div>
+        <dl class="studentmanagement-grid-date" ng-repeat="data in vm.gradeDate| filter:vm.defaultClasses| filter:vm.searchName|filter:vm.searchNumber" ng-class="{grid_even: $even,grid_odd: $odd}">
+          <dd style="width:150px;" ng-bind="data.number"></dd>
+          <dd style="width:150px;" ng-bind="data.name"></dd>
+          <dd style="width:250px;" ng-bind="data.college"></dd>
+          <dd style="width:250px;" ng-bind="data.classes"></dd>
+          <dd style="width:224px;">
+            <section layout="row" layout-sm="column" layout-align="space-around center">
+              <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon md-svg-icon="images/svg/iconfont-bianji.svg"></md-icon>
+              </md-button>
+              <md-button class="md-icon-button" aria-label="Settings" ng-disabled="false">
+                <md-icon md-svg-icon="images/svg/iconfont-shanchu.svg"></md-icon>
+              </md-button>
+            </section>
+          </dd>
+        </dl>
+        </div>
+</div>

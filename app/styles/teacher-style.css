@@ -1,0 +1,364 @@
+.forummanagement-container {
+  width: 1024px;
+  margin: 10px auto;
+  background-color: #FFF;
+}
+.forummanagement-container md-content.md-default-theme {
+  padding: 0;
+}
+.forummanagement-container .forummanagement-sidebar {
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+.forummanagement-container .forummanagement-sidebar ul {
+  width: 98%;
+}
+.forummanagement-container .forummanagement-sidebar ul li {
+  width: 100%;
+  line-height: 20px;
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: left;
+  text-indent: 10px;
+  color: #716C6C;
+  cursor: pointer;
+}
+.forummanagement-container .forummanagement-sidebar ul li:hover {
+  color: #283593;
+  border-left: 2px solid #283593;
+}
+.forummanagement-container .forummanagement-sidebar ul .active-btn {
+  color: #283593;
+  border-left: 2px solid #283593;
+}
+.forummanagement-container .forummanagement-itembox {
+  width: 762px;
+  height: 120px;
+  margin: 10px auto;
+  float: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.forummanagement-container .forummanagement-itembox:hover > .delect-forum {
+  display: block;
+}
+.forummanagement-container .forummanagement-itembox .delect-forum {
+  display: block;
+  width: 84px;
+  text-align: center;
+  float: right;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  color: #787d82;
+  cursor: pointer;
+  display: none;
+}
+.forummanagement-container .forummanagement-itembox .delect-forum:hover {
+  color: #f28484;
+  text-decoration: underline;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-people {
+  width: 100px;
+  height: 120px;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-people img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 20px 30px;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-people span {
+  display: block;
+  width: 100px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #716C6C;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container {
+  width: 440px;
+  height: 120px;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title {
+  width: 440px;
+  height: 40px;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title .from-teacher-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-tongzhi.png) center center no-repeat;
+  background-size: 26px;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title .from-student-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-tiwen01.png) center center no-repeat;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-title h3 {
+  width: 398px;
+  text-indent: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  *white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  font-weight: bold;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer {
+  width: 440px;
+  height: 40px;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 8px 0px 8px 16px;
+  border-radius: 50%;
+  background: url(../images/common/iconfont-huifu.png) center center no-repeat;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummanagement-forum-answer p {
+  width: 398px;
+  text-indent: 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  *white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag {
+  width: 440px;
+  height: 40px;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag em {
+  display: block;
+  width: 150px;
+  text-indent: 17px;
+  font-size: 14px;
+  color: #888181;
+  line-height: 40px;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanagement-forum-container .forummangement-forum-tag a {
+  padding: 3px;
+  color: #14191e;
+  background: #ddd;
+  font-size: 13px;
+  margin: 7px 10px;
+  float: left;
+}
+.forummanagement-container .forummanagement-itembox .forummanegement-forum-tip {
+  width: 120px;
+  height: 120px;
+  font-size: 14px;
+  float: right;
+}
+.forummanagement-container .forummanagement-itembox .forummanegement-forum-tip a {
+  float: left;
+  width: 60px;
+  height: 40px;
+  margin: 40px auto;
+  line-height: 20px;
+  text-align: center;
+  color: #787d82;
+}
+.forummanagement-container .forummanagement-itembox .forummanegement-forum-tip a div {
+  width: 60px;
+  text-align: center;
+  line-height: 20px;
+}
+.forummanagement-container .forummanagement-itembox .forummanegement-forum-tip > a:last-child {
+  width: 59px;
+  border-left: 1px solid #DDD;
+}
+.forummanagement-container .forummanagement-itembox .forummanegement-forum-tip > a:first-child {
+  color: green;
+}
+.grademanagement-header-menu {
+  height: 130px;
+  /**成绩管理工具栏**/
+  /**成绩管理搜索栏**/
+}
+.grademanagement-header-menu .grademanagement-toolbar {
+  float: right;
+}
+.grademanagement-header-menu .grademanagement-searchbar {
+  width: 639px;
+  float: right;
+}
+.grademanagement-header-menu .grademanagement-searchbar md-input-container {
+  width: 200px;
+  float: left;
+  margin-left: 45px;
+}
+.grademanagement-header-menu .grademanagement-searchbar .grademanagement-output-btn {
+  float: left;
+  margin-top: 23px;
+}
+.grademanagement-header-menu .grademanagement-labeltext {
+  font-size: 16px;
+  margin: 1.4em 20px 0 28px;
+  line-height: 30px;
+  float: left;
+}
+.grademanagement-header-menu .grademanagement-menu {
+  float: left;
+}
+/**成绩表格头部**/
+.grademanagement-grid-title {
+  height: 40px;
+  font-family: "Microsoft YaHei", "SimHei", "Arial Unicode MS";
+  font-size: 16px;
+  line-height: 40px;
+  background: #3f51b5;
+  color: #FFF;
+  text-align: center;
+}
+.grademanagement-grid-title ul li {
+  width: 128px;
+  height: 40px;
+  float: left;
+}
+.grademanagement-grid-date {
+  height: 30px;
+  font-family: "Microsoft YaHei", "SimHei", "Arial Unicode MS";
+  font-size: 14px;
+  line-height: 30px;
+  color: #333;
+  text-align: center;
+  display: block;
+}
+.grademanagement-grid-date dd {
+  width: 128px;
+  height: 30px;
+  float: left;
+}
+.state-container {
+  width: 1024px;
+  margin: 10px auto;
+}
+.state-container .echart-title {
+  width: 100%;
+  height: 30px;
+  margin: 15px auto;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.state-container .state-container-title {
+  width: 100%;
+  height: 65px;
+}
+.state-container .state-container-title h3 {
+  width: 150px;
+  float: left;
+  height: 65px;
+  line-height: 65px;
+  color: #283593;
+}
+.state-container .state-container-title .state-phy-seletion {
+  padding: 0 5px;
+  float: right;
+}
+.mark-container {
+  width: 1024px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.mark-container .mark-select-menu {
+  width: 100%;
+  height: 60px;
+}
+.mark-container .mark-select-menu md-select {
+  float: right;
+  margin-left: 50px;
+}
+.mark-container .mark-student-list {
+  width: 100%;
+  margin: 20px auto;
+}
+.mark-container .mark-student-list li {
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E4E4E4;
+}
+.mark-container .mark-student-list li .mark-student-list-left {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+.mark-container .mark-student-list li .mark-student-list-left h3 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}
+.mark-container .mark-student-list li .mark-student-list-left h3 .mark-abled {
+  color: #18AD5E;
+}
+.mark-container .mark-student-list li .mark-student-list-left h3 .mark-disabled {
+  color: #AD1818;
+}
+.mark-container .mark-student-list li .mark-student-list-data,
+.mark-container .mark-student-list li .mark-student-list-nodata {
+  width: 650px;
+  height: 50px;
+  float: left;
+  color: #747171;
+}
+.mark-container .mark-student-list li .mark-student-list-data .student-study-subject-data-row,
+.mark-container .mark-student-list li .mark-student-list-nodata .student-study-subject-data-row {
+  width: 162.5px;
+  height: 50px;
+  float: left;
+}
+.mark-container .mark-student-list li .mark-student-list-data .student-study-subject-data-row span,
+.mark-container .mark-student-list li .mark-student-list-nodata .student-study-subject-data-row span {
+  display: block;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+}
+.mark-container .mark-student-list li .mark-student-list-right {
+  width: 174px;
+  height: 50px;
+  float: left;
+}
+.mark-container .mark-student-list li .mark-student-list-right a {
+  display: block;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+.mark-container .mark-student-list li .mark-student-list-right a:hover {
+  color: #283593;
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+<div class="header-toolbar">
+<div class="container-warp">
+        	<a href="#" class="header-logo"></a>
+        	<a href="#" class="login-btn">帮助</a>
+   </div>
+</div>
+<div class="header-menu"  ng-controller="headerCtrl">
+     <div class="container-warp">
+     	<div class="header-menu-section">
+	     <section>
+	      <a ui-sref="{{menu.href}}" ui-sref-active="menu-btn-active" ng-repeat="menu in vm.menus">
+	      <md-button class="md-primary md-hue-1" ng-bind="menu.name"></md-button>
+	      </a>
+	    </section>
+	    </div>
+     </div>
+</div>
