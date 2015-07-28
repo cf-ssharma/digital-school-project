@@ -1,8 +1,6 @@
-<div class="stuforummanagement-container" md-theme="greenTheme">
+<div class="stuforummanagement-container">
   <div class="forummanagement-sidebar">
-  	<div class="forummanagement-sidebar-newquestion"><md-button class="md-fab md-mini md-primary" aria-label="Use Android">
-          <md-icon md-svg-src="images/svg/iconfont-tianjia.svg" style="color: greenyellow;"></md-icon>
-    </md-button>发布新问题</div>
+  	   <a class="new-discussion-btn">发布新问题</a>
     <ul>
   		<li class="active-btn">全部实验</li>
   		<li ng-repeat="course in vm.course" ng-bind="course"></li>

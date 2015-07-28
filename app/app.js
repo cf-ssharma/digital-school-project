@@ -75,6 +75,16 @@ define([
                             ])
                         }
                     })
+                    .state('student.wenda', {
+                        url: '/wenda',
+                        templateUrl: 'modules/student/wenda/wenda.html',
+                        controller: 'stuwendaCtrl',
+                        resolve: {
+                            load: loadDeps([
+                                'modules/student/wenda/wenda'
+                            ])
+                        }
+                    })
                     .state('teacher', {
                         abstract: true,
                         url: '/teacher',

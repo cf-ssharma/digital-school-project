@@ -3,9 +3,9 @@ define([
 	'../../../services/studentGetResource'
 ], function(controllers) {
 	controllers.controller('stuDiscussionCtrl', stuDiscussionFn);
-	stuDiscussionFn.$inject = ['$scope', '$timeout', 'getInfoService']
+	stuDiscussionFn.$inject = ['$scope','getInfoService']
 
-	function stuDiscussionFn($scope, $timeout, getInfoService) {
+	function stuDiscussionFn($scope,getInfoService) {
 		var vm = $scope.vm = {};
 		vm.course = getInfoService.query();
 		vm.response = [];

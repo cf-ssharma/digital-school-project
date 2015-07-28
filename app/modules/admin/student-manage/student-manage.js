@@ -1,5 +1,6 @@
 define([
-  '../../../app'
+  '../../../app',
+  '../../../services/studentGetResource'
 ], function(controllers) {
   controllers.controller('stuManagementCtrl', stuManagementFn);
   stuManagementFn.$inject = ['$scope', '$timeout', 'getInfoService'];

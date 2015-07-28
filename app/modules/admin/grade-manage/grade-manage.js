@@ -1,5 +1,6 @@
 define([
-  '../../../app'
+  '../../../app',
+    '../../../services/studentGetResource'
 ], function(controllers) {
   controllers.controller('gradeManagementCtrl', gradeManagementFn);
   gradeManagementFn.$inject = ['$scope', '$timeout', 'getInfoService'];
