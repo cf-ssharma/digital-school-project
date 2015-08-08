@@ -39,6 +39,9 @@
 		}
 	}
 }
+md-tabs.md-default-theme .md-tab.md-active{
+	color: rgb(255, 64, 129);
+}
 .header-toolbar{
 	    	height: 80px;
 	    	background-color: #FFF;
@@ -296,6 +299,9 @@
 		width: 1024px;
 		margin-top: 60px;
 		overflow: hidden;
+		.md-select-label{
+			padding-top:0;
+		}
 		.phymanagement-main{
 			width: 1024-270px;
 			float: left;
@@ -368,6 +374,45 @@
 					color: @blue-color-2;
 					border-left:2px solid @blue-color-2;
 				}
+			}
+		}
+	}
+	//视频管理
+	.video-manage{
+		margin-bottom: 55px;
+		.video-img-box{
+			float: left;
+			width:200px;
+			box-shadow:0px 1px 11px #DDD;
+			position: relative;
+			margin: 10px 25px;
+			cursor: pointer;
+			&:hover>.video-close-icon{
+				display: block;
+			}
+			.video-close-icon{
+				  position: absolute;
+				  top: -15px;
+				  background-color: rgb(230, 91, 91);
+				  border-radius: 50%;
+				  right: -14px;
+				  color: #fff;
+				  outline: none;
+				  display: none;
+				  cursor: pointer;
+			}
+			img{
+				width: 180px;
+				border:10px solid #FFF;
+				height: 120px;
+				background-color: #DDD;
+				border-bottom: 0;
+			}
+			p{
+				line-height: 30px;
+				width: 200px;
+				margin:5px auto;
+				text-align: center;
 			}
 		}
 	}

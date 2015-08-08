@@ -1,11 +1,5 @@
 <div class="stuforummanagement-container">
-  <div class="forummanagement-sidebar">
-  	   <a class="new-discussion-btn">发布新问题</a>
-    <ul>
-  		<li class="active-btn">全部实验</li>
-  		<li ng-repeat="course in vm.course" ng-bind="course"></li>
-  	</ul>
-  </div>
+  <div class="stuforummanagement-content">
   <md-content class="md-padding">
     <md-tabs md-dynamic-height md-border-bottom>
       <md-tab label="最新">
@@ -146,4 +140,13 @@
       </md-tab>
     </md-tabs>
   </md-content>
+  </div>
+  <div class="forummanagement-sidebar">
+    <ul>
+      <li class="active-btn">全部实验</li>
+      <li ng-repeat="course in vm.course" ng-bind="course"></li>
+    </ul>
+    <a class="new-discussion-btn">+发布新问题</a>
+  </div>
+  <div class="page"><span class="disabled_page">首页</span><span class="disabled_page">上一页</span><a href="javascript:void(0)" class="active">1</a><a href="/wenda/0/1/2">2</a><a href="/wenda/0/1/3">3</a><a href="/wenda/0/1/4">4</a><a href="/wenda/0/1/5">5</a><a href="/wenda/0/1/6">6</a><a href="/wenda/0/1/7">7</a><a href="/wenda/0/1/2">下一页</a><a href="/wenda/0/1/961">尾页</a></div>
 </div>

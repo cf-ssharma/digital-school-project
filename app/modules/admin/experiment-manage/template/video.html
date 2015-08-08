@@ -1,0 +1,22 @@
+<div layout="column">
+<div class="video-manage" >
+  <div class="video-img-box" ng-repeat="video in videos">
+    <img src="../images/student/student-subject-indexpic.jpg" alt="">
+    <p data-ng-bind="video.title"></p>
+    <md-icon md-svg-icon="md-close" class="ng-isolate-scope md-default-theme video-close-icon" aria-hidden="true" ng-click="removeVideo( video )" ng-disabled="video.length <= 1"><svg version="1.1" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><g><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path></g></svg></md-icon>
+  </div>
+</div>
+  <form ng-submit="addVideo(video.title,video.src)" layout="column" class="md-padding" style="padding-top: 0;">
+    <md-input-container>
+        <md-icon md-svg-src="/app/images/admin/iconfont-biaoti.svg" class="name"></md-icon>
+        <input type="text"  ng-model="video.title" placeholder="视频标题">
+      </md-input-container>
+      <md-input-container>
+      <md-input-container >
+        <md-icon md-svg-src="/app/images/admin/iconfont-link.svg" class="name"></md-icon>
+        <input ng-model="video.src" type="text" placeholder="视频链接">
+      </md-input-container>
+      </md-input-container>
+      <md-button class="add-tab md-primary md-raised" ng-disabled="!video.title || !video.src" type="submit" style="margin-right: 0;">添加</md-button>
+  </form>
+</div>

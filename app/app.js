@@ -2,16 +2,30 @@ define([
     'angular'
 ], function(angular) {
     return angular.module('app', [])
+        .constant('AUTH_EVENTS', {
+          loginSuccess: 'auth-login-success',
+          loginFailed: 'auth-login-failed',
+          logoutSuccess: 'auth-logout-success',
+          sessionTimeout: 'auth-session-timeout',
+          notAuthenticated: 'auth-not-authenticated',
+          notAuthorized: 'auth-not-authorized'
+        })
+        .constant('USER_ROLES', {
+          all: '*',
+          admin: 'admin',
+          teacher: 'teacher',
+          student: 'student'
+        })
         .config([
             '$stateProvider', '$locationProvider', '$urlRouterProvider', '$animateProvider', '$mdThemingProvider',
             //'$urlRouterProvider' ,
             function($stateProvider, $locationProvider, $urlRouterProvider, $animateProvider, $mdThemingProvider) {
                 $mdThemingProvider.theme('default')
-                    .primaryPalette('indigo')
-                    .accentPalette('indigo');
+                    // .primaryPalette('indigo')
+                    // .accentPalette('blue');
                 $mdThemingProvider.theme('greenTheme')
                     .primaryPalette('green')
-                    .accentPalette('green');
+                    .accentPalette('light-green');
                     // 设置路由
                 $stateProvider.state('login', {
                         url: '/login',

@@ -525,13 +525,15 @@ md-input-container.md-greenTheme-theme > md-icon {
   width: 1024px;
   margin: 10px auto;
   background-color: #FFF;
+  position: relative;
+  overflow: hidden;
 }
 .stuforummanagement-container md-content.md-greenTheme-theme {
   padding: 0;
 }
 .stuforummanagement-container .new-discussion-btn {
   display: block;
-  width: 210px;
+  width: 235px;
   height: 40px;
   line-height: 40px;
   color: #3fb57f;
@@ -546,10 +548,15 @@ md-input-container.md-greenTheme-theme > md-icon {
   background-color: #3fb57f;
   color: #fff;
 }
-.stuforummanagement-container .forummanagement-sidebar {
-  width: 250px;
+.stuforummanagement-container .stuforummanagement-content {
+  width: 763px;
   float: left;
-  margin-right: 10px;
+}
+.stuforummanagement-container .forummanagement-sidebar {
+  width: 240px;
+  float: right;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 .stuforummanagement-container .forummanagement-sidebar .forummanagement-sidebar-newquestion {
   width: 250px;
@@ -747,7 +754,6 @@ md-input-container.md-greenTheme-theme > md-icon {
   width: 1000px;
   padding: 10px;
   overflow: hidden;
-  /*翻页*/
 }
 .stuwenda-container .wenda-header-title {
   margin: 20px auto;
@@ -842,16 +848,17 @@ md-input-container.md-greenTheme-theme > md-icon {
 .stuwenda-container .wenda-comment .wenda-comment-more > a {
   color: #d0d6d9;
 }
-.stuwenda-container .page {
+/*翻页*/
+.page {
   margin: 25px 0 auto;
   overflow: hidden;
   clear: both;
   text-align: center;
 }
-.stuwenda-container .page-inner {
+.page-inner {
   padding: 0 20px;
 }
-.stuwenda-container .page a {
+.page a {
   display: inline-block;
   margin: 0 5px;
   padding: 0 5px;
@@ -865,18 +872,18 @@ md-input-container.md-greenTheme-theme > md-icon {
   -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
 }
-.stuwenda-container .page a:hover {
+.page a:hover {
   border-color: #30a670;
   color: #30a670;
   text-decoration: none;
 }
-.stuwenda-container .page a.active {
+.page a.active {
   background: #30a670;
   color: #ffffff;
   border-color: transparent;
 }
-.stuwenda-container .page span,
-.stuwenda-container .page-disabled {
+.page span,
+.page-disabled {
   display: inline-block;
   padding: 0 5px;
   min-width: 20px;
@@ -886,14 +893,14 @@ md-input-container.md-greenTheme-theme > md-icon {
   color: #c8cdd2;
   text-align: center;
 }
-.stuwenda-container .page-first,
-.stuwenda-container .page-last {
+.page-first,
+.page-last {
   width: 50px;
 }
-.stuwenda-container .page-prev,
-.stuwenda-container .page-next {
+.page-prev,
+.page-next {
   width: 70px;
 }
-.stuwenda-container .page .notmargin {
+.page .notmargin {
   margin-right: 0;
 }

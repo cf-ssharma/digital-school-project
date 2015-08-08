@@ -1,0 +1,69 @@
+<form ng-submit="submit()">
+  <div class="phymanagement-radio-item">
+  	<h3 class="phymanagement-title">单选题/Radio<span></span></h3>
+  	<div class="phymanagement-subject">
+  		<ueditor config="editorConfig" ng-model="radiocontent"><p>1.</p></ueditor>
+        <p>正确答案: <span class="radioValue">{{ data.group1 }}</span> </p>
+	    <md-radio-group ng-model="data.group1">
+	      <md-radio-button value="A">A</md-radio-button>
+	      <md-radio-button value="B">B</md-radio-button>
+	      <md-radio-button value="C">C</md-radio-button>
+	      <md-radio-button value="D">D</md-radio-button>
+	    </md-radio-group>
+        <md-input-container md-no-float>
+               <input ng-model="radio.a" placeholder="A.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="radio.b" placeholder="B.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="radio.c" placeholder="C.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="radio.d" placeholder="D.选项">
+        </md-input-container>
+  	</div>
+  </div>
+ <div class="phymanagement-multi-item">
+  	<h3 class="phymanagement-title">多选题/Multi<span></span></h3>
+  	<div class="phymanagement-subject">
+  		<ueditor config="editorConfig" ng-model="multicontent"><p>1.</p></ueditor>
+        <p>正确答案: <span class="radioValue">{{ selected }}</span> </p>
+	    <md-checkbox ng-repeat="item in items" ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+	    {{item}}
+        </md-checkbox>
+        <md-input-container md-no-float>
+               <input ng-model="Multi.a" placeholder="A.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="Multi.b" placeholder="B.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="Multi.c" placeholder="C.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="Multi.d" placeholder="D.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="Multi.e" placeholder="E.选项">
+        </md-input-container>
+        <md-input-container md-no-float>
+               <input ng-model="Multi.f" placeholder="F.选项">
+        </md-input-container>
+  	</div>
+  </div>
+  <div class="phymanagement-short-item">
+  	<h3 class="phymanagement-title">简答题/Short<span></span></h3>
+  	<div class="phymanagement-subject">
+  		<ueditor config="editorConfig" ng-model="Short1"><p>1.</p></ueditor>
+  		<ueditor config="editorConfig" ng-model="Short2"><p>2.</p></ueditor>
+  	</div>
+  </div>
+   <div class="phymanagement-solution-item">
+  	<h3 class="phymanagement-title">思考题/Solution<span></span></h3>
+  	<div class="phymanagement-subject">
+  		<ueditor config="editorConfig" ng-model="Solution1"><p>1.</p></ueditor>
+  		<ueditor config="editorConfig" ng-model="Solution2"><p>2.</p></ueditor>
+  	</div>
+  </div>
+  </form>	
