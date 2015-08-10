@@ -122,7 +122,7 @@ require( [
     'angular-sanitize',
     // 别忘了依赖 app 模块
     './app' , // 前面的 ./ 必须带上，否则 gulp-rev-all 不会更新引用
-
+    './services/authService'
     // 公用的服务和指令列在下面。
     // 这些模块因为都依赖 app.js ，所以必须声明在这里而不是 app.js 里。
 ] , function ( angular ) {

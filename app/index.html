@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="vendor/angular-animate/animate.css">
         <link rel="stylesheet" href="styles/common.css" />
     </head>
-    <body>
+    <body ng-controller="ApplicationController">
         <div ui-view></div>
         <div ng-include src="'modules/common/footer.html'"></div>
         <!--data-main里的 .js 后缀得加上，否则 gulp-rev-all 不会更新它的引用-->

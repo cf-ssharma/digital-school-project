@@ -1,19 +1,19 @@
-<div class="container ng-cloak" ng-controller="loginCtrl">
+<div class="container ng-cloak">
      <div class="login-container">
       <div class="login-board">
           <div class="container-warp">
          <div class="login-board-right">
            <div class="stu-login-box">
               <h3></h3>
-              <form  ng-submit="vm.login();">
+              <form  ng-submit="login(credentials);">
           <md-content layout-padding class="stu-login-box-input" md-theme="greenTheme">
             <md-input-container md-no-float>
               <md-icon md-svg-src="images/svg/iconfont-yonghunew.svg"></md-icon>
-              <input ng-model="vm.username" type="text" placeholder="用户名/Username">
+              <input ng-model="credentials.number" type="text" placeholder="用户名/Username">
             </md-input-container>
             <md-input-container md-no-float>
               <md-icon md-svg-src="images/svg/iconfont-mima.svg"></md-icon>
-              <input ng-model="vm.password" type="password" placeholder="密码/Password">
+              <input ng-model="credentials.password" type="password" placeholder="密码/Password">
             </md-input-container>
             <md-button type="submit" class="md-raised md-primary stu-login-box-btn">立即登录</md-button>
             </md-content>
