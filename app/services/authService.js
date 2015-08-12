@@ -2,19 +2,23 @@ define(['../app'], function(services) {
 	// RESOURCE
 	'use strict';
 	services.factory('AuthService', AuthServiceFn);
-	AuthServiceFn.$injector = ['$http', 'Session'];
-	function AuthServiceFn($http, Session) {
+	AuthServiceFn.$injector = ['$http', 'Session','USER_ROLES'];
+	function AuthServiceFn($http, Session,USER_ROLES) {
 		var authService = {};
 		authService.login = function(credentials) {
 			return $http
 				.post('/Digital_School/pub/Login', credentials)
 				.then(function(res) {
-					Session.create(res.data.id, res.data.user.id,
-						res.data.user.role);
-					return res.data.user;
+					if(res.data.tip!='fail'){
+						Session.create(res.data.username,res.data.role);
+						return res.data.role;
+					}
+					return false;
 				});
 		};
-
+		authService.getUserInfo=function(){
+				return $http.get('/Digital_School/stu/GetStuInfo');
+		}
 		authService.isAuthenticated = function() {
 			return !!Session.userId;
 		};
@@ -23,7 +27,7 @@ define(['../app'], function(services) {
 			if (!angular.isArray(authorizedRoles)) {
 				authorizedRoles = [authorizedRoles];
 			}
-			if (authorizedRoles[0] == '*')
+			if (authorizedRoles[0] == USER_ROLES.all)
 				return true;
 			return (authService.isAuthenticated() &&
 				authorizedRoles.indexOf(Session.userRole) !== -1);
@@ -31,13 +35,11 @@ define(['../app'], function(services) {
 		return authService;
 	}
 	services.service('Session', function() {
-		this.create = function(sessionId, userId, userRole) {
-			this.id = sessionId;
+		this.create = function(userId, userRole) {
 			this.userId = userId;
 			this.userRole = userRole;
 		};
 		this.destroy = function() {
-			this.id = null;
 			this.userId = null;
 			this.userRole = null;
 		};

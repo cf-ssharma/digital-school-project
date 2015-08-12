@@ -5,9 +5,7 @@
           <div class="studentmanagement-menu college-select-menu">
             <div style="height: 40px;">
               <md-select ng-model="vm.defaultCollege" ng-change="changeCollege();"  placeholder="选择学院">
-                <md-optgroup label="选择学院">
                   <md-option ng-value="key" ng-repeat="(key,value) in vm.classmanagement" ng-bind="key"></md-option>
-                </md-optgroup>
               </md-select>
             </div>
           </div>
@@ -15,9 +13,7 @@
           <div class="studentmanagement-menu classes-select-menu">
             <div style="height: 40px;">
               <md-select ng-model="vm.defaultClasses" placeholder="选择班级">
-                <md-optgroup label="选择班级">
                   <md-option ng-value="classes" ng-repeat="classes in vm.classmanagement[vm.defaultCollege]" ng-bind="classes"></md-option>
-                </md-optgroup>
               </md-select>
             </div>
           </div>

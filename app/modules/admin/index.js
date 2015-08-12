@@ -1,5 +1,7 @@
 define([
-	'../../app'
+	'../../app',
+	'../../services/pubService',
+	'../../services/adminService'
 ], function(controllers) {
 	controllers.controller('headerCtrl', headerFn);
  	headerFn.$inject = ['$scope','$interval'];

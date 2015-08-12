@@ -8,14 +8,12 @@
 </div>
   <form ng-submit="addVideo(video.title,video.src)" layout="column" class="md-padding" style="padding-top: 0;">
     <md-input-container>
-        <md-icon md-svg-src="/app/images/admin/iconfont-biaoti.svg" class="name"></md-icon>
+        <md-icon md-svg-src="../app/images/admin/iconfont-biaoti.svg" class="name"></md-icon>
         <input type="text"  ng-model="video.title" placeholder="视频标题">
       </md-input-container>
-      <md-input-container>
       <md-input-container >
-        <md-icon md-svg-src="/app/images/admin/iconfont-link.svg" class="name"></md-icon>
+        <md-icon md-svg-src="../app/images/admin/iconfont-link.svg" class="name"></md-icon>
         <input ng-model="video.src" type="text" placeholder="视频链接">
-      </md-input-container>
       </md-input-container>
       <md-button class="add-tab md-primary md-raised" ng-disabled="!video.title || !video.src" type="submit" style="margin-right: 0;">添加</md-button>
   </form>

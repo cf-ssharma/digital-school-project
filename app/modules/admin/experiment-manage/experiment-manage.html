@@ -1,7 +1,7 @@
 <div class="phymanagement-container">
    <div class="phymanagement-sidebar">
   	<ul>
-		<li ng-class="{'active-btn':$first}" ng-repeat="course in vm.course" ng-bind="course"></li>
+		<li ng-class="{'active-btn':$first}" ng-repeat="course in lessons" ng-click(getLessonInfo(course.id)) ng-bind="course.name"></li>
   	</ul>
   </div>
   <div class="phymanagement-main">

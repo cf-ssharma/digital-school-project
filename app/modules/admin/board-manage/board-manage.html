@@ -1,14 +1,16 @@
 <div class="boardmanagement-container">
     <h3>发布新公告</h3>
+    <form data-ng-submit="updateNews(news,nowTime)" name="board" novalidate>
 	<div class="boardmanagement-editbox">
-		<ueditor config="editorConfig" ng-model="board">
-		<p>用拉伸法测量杨氏弹性模量课程已发布，请同学们及时完成课程内容！</p>
+		<ueditor config="editorConfig" ng-model="news" name="news" requeried>
+		
 		</ueditor>
         <div class="boardmanagement-editbox-btn">
-        	<md-button class="md-raised md-primary grademanagement-output-btn">发布新公告</md-button>
+        	<md-button type='submit' class="md-raised md-primary grademanagement-output-btn">发布新公告</md-button>
         </div>
 		<h3>最新公告</h3>
 		<div class="boardmanagement-preview" ng-bind-html="html"></div>
 		<span class="boardmanagement-preview-time" ng-bind="nowTime| date:'—— yyyy 年 MM 月 dd 号'"></span>
 	</div>
+	</form>
 </div>

@@ -1,21 +1,24 @@
 define([
   '../../../app',
   '../../../directives/ueditor-directive',
-  '../../../services/studentGetResource'
+  '../../../services/studentService',
+  '../../../services/adminService'
 ], function(controllers) {
   controllers.controller('phyManagementCtrl', phyManagementFn);
-  phyManagementFn.$inject = ['$scope', '$timeout', '$log', 'getInfoService'];
+  phyManagementFn.$inject = ['$scope', '$timeout', '$log', 'stuService'];
 
-  function phyManagementFn($scope, $timeout, $log, getInfoService) {
-    var vm = $scope.vm = {};
-    $scope.editorConfig = {
-      initialFrameHeight: 100,
-      initialFrameWidth: 740,
-      toolbars: [
-        ["bold", "italic", "underline", "simpleupload", "spechars", "insertunorderedlist", "insertorderedlist"]
-      ]
-    }
-    vm.course = getInfoService.query();
+  function phyManagementFn($scope, $timeout, $log, stuService) {
+    // ueditor配置
+        $scope.editorConfig = {
+          initialFrameHeight: 100,
+          initialFrameWidth: 740,
+          toolbars: [
+            ["bold", "italic", "underline", "simpleupload", "spechars", "insertunorderedlist", "insertorderedlist"]
+          ]
+        }
+    stuService.getLessons(function(res){
+     $scope.lessons=res.lesson;
+    });
     $scope.items = ['A', 'B', 'C', 'D', 'E', 'F'];
     $scope.selected = [];
     $scope.toggle = function(item, list) {
@@ -27,8 +30,8 @@ define([
     $scope.exists = function(item, list) {
       return list.indexOf(item) > -1;
     };
-    // 基本内容
-    var tabs=getInfoService.query({dataName:'lesson'});
+    基本内容
+    var tabs=stuService.query({dataName:'lesson'});
       selected = null,
       previous = null;
     $scope.tabs = tabs;

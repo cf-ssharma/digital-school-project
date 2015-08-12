@@ -362,25 +362,33 @@ define([
 
             }
         ])
-        .run(['$rootScope', '$location', '$timeout', 'AUTH_EVENTS', 'AuthService', function($rootScope, $location, $timeout, AUTH_EVENTS, AuthService) {
-            $rootScope.$on('$stateChangeStart', function(event, toState) {
-                var authorizedRoles = toState.data.authorizedRoles;
-                if (!AuthService.isAuthorized(authorizedRoles)) {
-                    event.preventDefault();
-                    if (AuthService.isAuthenticated()) {
-                        // user is not allowed
-                        $rootScope.$broadcast(AUTH_EVENTS.notAuthorized);
-                    } else {
-                        $rootScope.$broadcast(AUTH_EVENTS.notAuthenticated);
-                    }
-                }
-            });
-            $rootScope.$on(AUTH_EVENTS.notAuthenticated, function() {
-                $timeout(function() {
-                    $location.path('/login').replace();
-                }, 0, true)
-            })
-        }])
+        // .run(['$rootScope', '$location', '$timeout', 'AUTH_EVENTS', 'AuthService','USER_ROLES','Session', function($rootScope, $location, $timeout, AUTH_EVENTS, AuthService,USER_ROLES,Session) {
+        //     $rootScope.$on('$stateChangeStart', function(event, toState) {
+        //         var authorizedRoles = toState.data.authorizedRoles;
+        //         if (!AuthService.isAuthorized(authorizedRoles)) {
+        //             event.preventDefault();
+        //             if (AuthService.isAuthenticated()) {
+        //                 // user is not allowed
+        //                 $rootScope.$broadcast(AUTH_EVENTS.notAuthorized);
+        //             } else {
+        //                 // user not login in
+        //                 $rootScope.$broadcast(AUTH_EVENTS.notAuthenticated);
+        //             }
+        //         }
+        //     });
+        //     $rootScope.$on(AUTH_EVENTS.notAuthenticated, function() {
+        //         $timeout(function() {
+        //             $location.path('/login').replace();
+        //         }, 0, true)
+        //     })
+        //     $rootScope.$on(AUTH_EVENTS.notAuthorized, function() {
+        //         $timeout(function() {
+        //             $location.path('/login').replace();
+        //         }, 0, true)
+        //     })
+        //     $rootScope.$on(AUTH_EVENTS.loginSuccess, function() {
+        //     })
+        // }])
         .controller('ApplicationController', ApplicationControllerFn)
         .factory('AuthInterceptor', AuthInterceptorFn)
     AuthInterceptorFn.$injector = ['$rootScope', '$q', 'AUTH_EVENTS'];
@@ -402,10 +410,14 @@ define([
 
     function ApplicationControllerFn($scope, USER_ROLES, AuthService) {
         $scope.currentUser = null;
+        $scope.currentUserInfo=null;
         $scope.userRoles = USER_ROLES;
         $scope.isAuthorized = AuthService.isAuthorized;
         $scope.setCurrentUser = function(user) {
             $scope.currentUser = user;
+        };
+        $scope.currentUserInfo = function(userInfo) {
+            $scope.currentUserInfo = userInfo;
         };
     }
 });

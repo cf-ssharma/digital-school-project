@@ -121,7 +121,7 @@ md-tabs.md-default-theme .md-tab.md-active {
   /**成绩管理搜索栏**/
 }
 .studentmanagement-header-menu .studentmanagement-toolbar {
-  width: 480px;
+  width: 600px;
   margin-left: 544px;
 }
 .studentmanagement-header-menu .studentmanagement-searchbar {
@@ -372,13 +372,15 @@ md-tabs.md-default-theme .md-tab.md-active {
 .video-manage .video-img-box {
   float: left;
   width: 200px;
-  box-shadow: 0px 1px 11px #DDD;
   position: relative;
   margin: 10px 25px;
   cursor: pointer;
 }
 .video-manage .video-img-box:hover > .video-close-icon {
   display: block;
+}
+.video-manage .video-img-box:hover {
+  box-shadow: 0px 1px 11px #DDD;
 }
 .video-manage .video-img-box .video-close-icon {
   position: absolute;
